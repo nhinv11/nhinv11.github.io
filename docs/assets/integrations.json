@@ -1,0 +1,111 @@
+{
+    "languages": [ 
+        {
+            "name": "Java",
+            "build_tools": [
+                {
+                    "name": "Ant",
+                    "compile": "<javac debug=\"on\"> ... set of classes ... </javac>",
+                    "plugins": [ 
+                        {       
+                            "name": "",
+                            "code": []
+                        }
+                    ]  
+                },
+                {
+                    "name": "Gradle",
+                    "compile": "a",
+                    "plugins": [ 
+                        {       
+                            "name": "",
+                            "code": []
+                        }
+                    ]  
+                },
+                {
+                    "name": "Jenkins",
+                    "compile": "",
+                    "plugins": [ 
+                        {       
+                            "name": "",
+                            "code": []
+                        }
+                    ]           
+                },
+                {
+                    "name": "Maven",
+                    "compile": "",
+                    "plugins": [ 
+                        {
+                            "name": "Spring Boot",
+                            "code": [
+                                "<plugin>",
+                                "<groupId>org.springframework.boot</groupId>",
+                                "<artifactId>spring-boot-maven-plugin</artifactId>",
+                                "<version>2.3.4.RELEASE</version>",
+                                "<executions>",
+                                "<execution>",
+                                "<goals>",
+                                "<goal>repackage</goal>",
+                                "</goals>",
+                                "</execution>",
+                                "</executions>",
+                                "</plugin>"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "ides": [
+                {
+                    "name": "Eclipse",
+                    "notes": "notes for eclipse"
+                },
+                {
+                    "name": "IntelliJ",
+                    "notes": "notes for intellij"
+                }                               
+            ]   
+        },
+        {
+            "name": ".NET",
+            "build_tools": [
+                {
+                    "name": "msbuild",
+                    "compile": "msbuild app.csproj",
+                    "plugins": [ 
+                        {       
+                            "name": "",
+                            "code": []
+                        }
+                    ]  
+                },
+                {
+                    "name": "dotnet",
+                    "compile": "dotnet pubilsh"
+                },
+                {
+                    "name": "Azure",
+                    "compile": "",
+                    "plugins": [ 
+                        {       
+                            "name": "",
+                            "code": []
+                        }
+                    ]  
+                }                
+            ],
+            "ides": [
+                {
+                    "name": "Visual Studio",
+                    "notes": "notes for Visual Studio"
+                },
+                {
+                    "name": "VS Code",
+                    "notes": "notes for VS Code"
+                }
+            ]                  
+        }
+    ]
+}
