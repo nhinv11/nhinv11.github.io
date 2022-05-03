@@ -1,0 +1,45 @@
+<h6>What is the primary language group for your application?</h6>
+<div class="btn-group" *ngFor="let language of languages.languages">
+    <button type="button" data-toggle="button" class="btn btn-outline-primary" value="{{language.name}}" aria-pressed="true" (click)="this.updateLanguage($event)">{{ language.name }}</button>&nbsp;&nbsp;
+</div>
+<br/><br/>
+<!-- <p><input type="radio">&nbsp;I have a secondary language group.</p> -->
+<table *ngIf="this.selectedLanguage =='Java'">
+    <tr>
+        <td style="text-align: right;">
+            <span>{{this.selectedLanguage}} Versions</span>
+        </td>
+        <td style="text-align: left;">
+            <div class="dropdown">
+                <select class="appLanguageInput form-select" selectedLangVersion required (change)="this.updateLangVersion($event)">
+                    <option value="">-- Select Version --</option>
+                    <option *ngFor="let lang of langVersion" [value]="lang">{{lang}}</option>
+                </select>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: right;">
+            <span style="vertical-align: center;">How do you package your {{ this.selectedLanguage }} application?</span>
+        </td>
+        <td style="text-align: left;">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" >
+                <input id="javaJarFormat" class="btn btn-outline-primary" name="JAR" type="button" (click)="this.getJavaFormat($event)" value="JAR" />
+                <input id="javaWarFormat" class="btn btn-outline-primary" name="WAR" type="button" (click)="this.getJavaFormat($event)" value="WAR" />
+                <input id="javaEarFormat" class="btn btn-outline-primary" name="EAR" type="button" (click)="this.getJavaFormat($event)" value="EAR" />
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: right;">
+            <span>Do you have JSP files?</span>
+        </td>
+        <td style="text-align: left;">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <input id="withJSP" name="withJSP" class="btn btn-outline-primary" type="button" (click)="this.getJSP($event)" value="Yes"/>
+                <input id="withJSP" name="withJSP" class="btn btn-outline-primary" type="button" (click)="this.getJSP($event)" value="No"/>
+            </div>
+        </td>
+    </tr>
+</table>
+<br/>
