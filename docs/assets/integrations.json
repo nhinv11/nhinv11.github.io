@@ -5,26 +5,35 @@
             "build_tools": [
                 {
                     "name": "Ant",
-                    "compile": "<javac debug=\"on\"> ... set of classes ... </javac>",
+                    "build_file": "build.xml",
+                    "compile": "ant",
                     "plugins": [ 
                         {       
                             "name": "",
-                            "code": []
+                            "code": [
+                                "<javac debug=\"on\"> ... set of classes ... </javac>"
+                            ]
                         }
                     ]  
                 },
                 {
                     "name": "Gradle",
-                    "compile": "a",
+                    "build_file": "build.gradle",
+                    "compile": "gradlew",
                     "plugins": [ 
                         {       
-                            "name": "",
-                            "code": []
+                            "name": "java plugin",
+                            "code": [
+                                "apply plugin: 'java'",
+                                "compileJava.options.debug = true",
+                                "compileJava.options.debugOptions.debugLevel = \"source,lines,vars\""
+                            ]
                         }
                     ]  
                 },
                 {
                     "name": "Jenkins",
+                    "build_file": "yaml",
                     "compile": "",
                     "plugins": [ 
                         {       
@@ -35,7 +44,8 @@
                 },
                 {
                     "name": "Maven",
-                    "compile": "",
+                    "build_file": "pom.xml",
+                    "compile": "mvn clean compile",
                     "plugins": [ 
                         {
                             "name": "Spring Boot",
@@ -53,6 +63,13 @@
                                 "</executions>",
                                 "</plugin>"
                             ]
+                        },
+                        {
+                            "name": "Maven Compiler Plugin",
+                            "code": [
+                                "<build><plugins><plugin><artifactId>maven-compiler-plugin</artifactId><configuration><debug>true</debug><debuglevel>lines,vars,source</debuglevel></configuration></plugin></plugins></build>"
+                            ]
+
                         }
                     ]
                 }
