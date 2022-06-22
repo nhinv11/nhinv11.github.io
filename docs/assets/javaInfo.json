@@ -94,7 +94,12 @@
         {
             "header": "Compilation",
             "info": "Using the standard Java compiler, run the javac command with the -g option to obtain debug symbols",
-            "code": "javac -g test1.java"
+            "code": "javac -g test1.java",
+            "details": [
+                {
+                    "note": "" 
+                }
+            ] 
         }
     ],
     "references": [

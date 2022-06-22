@@ -1,0 +1,67 @@
+{
+    "packaging": [
+        {
+            "header": "Packaging",
+            "info": "Veracode expects you to submit JavaScript as a Zip file.",
+            "type": [
+                {
+                    "name" : "JAR",
+                    "structure": [
+                        {
+                            "folders": "/META-INF/"
+                        },
+                        {
+                            "folders": "/com/:contains class files"
+                        },
+                        {
+                            "folders": "/org/:contains class files"
+                        }                         
+                    ],
+                    "details": [
+                        {
+                            "note": "Veracode can scan JAR files that contain a web.xml file in the /WEB-INF/ directory. Veracode scans these JARs as if they are WAR files, which improves support for application servers and packaging methods that manage this deployment method, including OSGi." 
+                        },
+                        {
+                            "note": "Veracode Supports Maven Shaded JARs and Spring Boot JARs."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],    
+    "compilation": [
+        {
+            "header": "",
+            "info": "",
+            "code": "",
+            "details": [
+                {
+                    "note": "" 
+                }
+            ] 
+        }
+    ],
+    "references": [
+        {
+            "header": "References",
+            "links": [
+                {
+                    "name": "JavaScript Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_jscript"
+                }
+            ], 
+            "videos": [
+                {
+                    "name": "Start a Static Scan",
+                    "url": "https://www.youtube.com/embed/M-v0dodSavM"
+                }
+            ],
+            "examples": [
+                {
+                    "name": "JavaScript Example",
+                    "url": "https://github.com/veracode/verademo"
+                }
+            ]
+        }
+    ]
+}
