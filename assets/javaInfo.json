@@ -1,0 +1,127 @@
+{
+    "packaging" : [
+        {
+            "basic" : "Veracode expects you to submit Java web applications in a standard JAR, WAR or EAR format.",
+            "sca": [
+                "Include JAR dependencies in upload."
+            ],
+            "format" : [
+                {
+                    "type" : "JAR",
+                    "structure": [
+                        {
+                            "folders": "/META-INF/"
+                        },
+                        {
+                            "folders": "/com/:contains class files"
+                        },
+                        {
+                            "folders": "/org/:contains class files"
+                        }                         
+                    ],
+                    "notes": [
+                        {
+                            "note": "Veracode can scan JAR files that contain a web.xml file in the /WEB-INF/ directory. Veracode scans these JARs as if they are WAR files, which improves support for application servers and packaging methods that manage this deployment method, including OSGi." 
+                        },
+                        {
+                            "note": "Veracode Supports Maven Shaded JARs and Spring Boot JARs."
+                        }
+                    ]
+                },
+                {
+                    "type" : "WAR",
+                    "structure": [
+                        {
+                            "folders": "/WEB-INF/"
+                        },
+                        {
+                            "folders": "/WEB-INF/classes/:contains all class files"
+                        },
+                        {
+                            "folders": "/WEB-INF/lib/:contains all supporting libraries"
+                        },
+                        {
+                            "folders": "/WEB-INF/web.xml"
+                        }                       
+                    ],
+                    "notes" : []
+                },
+                {
+                    "type" : "EAR",
+                    "structure": [
+                        {
+                            "folders": "/META-INF/application.xml"
+                        },
+                        {
+                            "folders": "/lib/:contains all supporting libraries"
+                        },
+                        {
+                            "folders": ":contains class files"
+                        },
+                        {
+                            "folders": ":contains WARs/JARs"
+                        }                     
+                    ],
+                    "notes": [
+                        {
+                            "note": "If an EAR file does not contain any WAR files, you do not need to include the /WEB-INF/ directory or the /WEB-INF/web.xml file."
+                        }
+                    ]
+                }                                            
+            ],
+            "special" : [
+                {
+                    "type": "JSP",
+                    "notes": [
+                        {
+                            "note": "JSP tags and tag attributes are case-sensitive."
+                        },
+                        {
+                            "note": "If JSP files are dynamically generated at runtime, Veracode cannot analyze them. Veracode identifies these files as missing dependencies during prescan verification. To facilitate analysis, provide static instances of these files or stubs."
+                        },
+                        {
+                            "note": "Veracode cannot scan JSP files if you cannot compile those files. Veracode reports JSP compilation errors as part of the prescan verification process. You can submit an application that has JSP compilation errors for scanning, but Veracode does not analyze JSP files with compilation errors."
+                        }
+                    ]
+                } 
+            ]
+        }
+    ],
+    "compilation" : [
+        {
+            "basic" : "Using the standard Java compiler, run the javac command with the -g option to obtain debug symbols",
+            "code" : "javac -g test1.java",
+            "notes" : []
+       }
+    ],
+    "reference" : [
+        {
+            "type" : "links",
+            "resource": [
+                {
+                    "name": "Java Compilation/Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_java"
+                }
+            ]
+        },
+        {
+            "type" : "videos",
+            "resource": [
+                {
+                    "name": "Start a Static Scan",
+                    "url": "https://www.youtube.com/embed/M-v0dodSavM"
+                }
+            ]
+        },
+        {
+            "type" : "examples",
+            "resource": [
+                {
+                    "name": "Java Example",
+                    "url": "https://github.com/veracode/verademo"
+                }
+            ]
+        }
+    ]
+
+}

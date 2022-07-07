@@ -1,0 +1,19 @@
+{
+    "application_types": [
+        {
+            "name": "API"
+        },
+        {
+            "name": "Console"
+        },
+        {
+            "name": "Desktop"
+        },
+        {
+            "name": "Microservice"
+        },
+        {
+            "name": "Web App"
+        }
+    ]
+}

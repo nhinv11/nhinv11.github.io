@@ -1,0 +1,64 @@
+{
+    "packaging" : [
+        {
+            "basic" : "Veracode expects you to submit JavaScript as a Zip file.",
+            "format" : [
+                {
+                    "type" : "ZIP",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "Do not run npm install and include node modules." 
+                        },
+                        {
+                            "note": "Do not include node_modules." 
+                        }
+                    ]
+                }                                           
+            ],
+            "special" : [],
+            "sca" : [
+                "For Bower, include package.json and bower.lock file.", 
+                "For NPM, include package.json and package-lock.json file.",
+                "For Yarn, include package.json and yarn.lock file."
+            ]
+        }
+    ],
+    "compilation" : [
+        {
+            "basic" : "",
+            "code" : "",
+            "notes" : []
+       }
+    ],
+    "reference" : [
+        {
+            "type" : "links",
+            "resource": [
+                {
+                    "name": "JavaScript Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_jscript"
+                }
+            ]
+        },
+        {
+            "type" : "videos",
+            "resource": [
+                {
+                    "name": "Start a Static Scan",
+                    "url": "https://www.youtube.com/embed/M-v0dodSavM"
+                }
+            ]
+        },
+        {
+            "type" : "examples",
+            "resource": [
+                {
+                    "name": "JavaScript Example",
+                    "url": "https://github.com/veracode/verademo"
+                }
+            ]
+        }
+    ]
+
+}

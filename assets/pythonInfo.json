@@ -1,0 +1,71 @@
+{
+    "packaging" : [
+        {
+            "basic" : "Upload a compressed ZIP archive containing all Python and HTML code, maintaining the project structure, to Veracode.",
+            "sca": [
+                "Include Pipfile.lock in the root of your ZIP archive."
+            ],
+            "format" : [
+                {
+                    "type" : "ZIP",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "Do not include third-party packages."  
+                        },
+                        {
+                            "note": "Do not upload individual Python source files."
+                        }
+                    ]
+                }                                           
+            ],
+            "special" : [
+                {
+                    "type": "Jython",
+                    "notes": [
+                        {
+                            "note": "Veracode can also analyze Jython applications that you submit as source."
+                        }
+                    ]
+                } 
+            ]
+        }
+    ],
+    "compilation" : [
+        {
+            "basic" : "",
+            "code" : "",
+            "notes" : []
+       }
+    ],
+    "reference" : [
+        {
+            "type" : "links",
+            "resource": [
+                {
+                    "name": "Python Compilation/Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_python"
+                }
+            ]
+        },
+        {
+            "type" : "videos",
+            "resource": [
+                {
+                    "name": "Start a Static Scan",
+                    "url": "https://www.youtube.com/embed/M-v0dodSavM"
+                }
+            ]
+        },
+        {
+            "type" : "examples",
+            "resource": [
+                {
+                    "name": "Python Example",
+                    "url": "N/A"
+                }
+            ]
+        }
+    ]
+
+}

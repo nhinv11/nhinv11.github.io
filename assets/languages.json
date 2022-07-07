@@ -1,0 +1,121 @@
+{
+    "languages": [
+        {
+            "name": ".NET",
+            "variants": [
+            { 
+                "variant": "C#, VB.NET",
+                "versions": [
+                    ".NET 2.0, 3.0, 3.5, 4.0, 4.5–4.8, 5.0, 6.0",
+                    ".NET Core 3.1 and earlier",
+                    ".NET Standard 2.0–2.1"
+                ]
+            },
+            {
+                "variant": "C++/CLI",
+                "versions": [
+                    ".NET 2.0, 3.0, 3.5, 4.0, 4.5–4.8 (CLR 2.0)"
+                ]
+            }
+            ],
+            "platforms": [
+                ".NET/Windows",
+                ".NET Core",
+                ".NET Standard",
+                ".NET Portable Class Library"
+            ],
+            "versions": ["1"],
+            "compilers": [""],
+            "extensions": "DLL, EXE, PDB"
+        },
+        { 
+            "name": "Java",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""]
+                }
+            ],
+            "platforms": [
+                "Java SE",
+                "Java EE", 
+                "JSP"
+            ],
+            "versions": [
+                "JRE 1.4",
+                "JRE 1.5",
+                "JRE 1.6",
+                "JRE 1.7",
+                "JRE 1.8",
+                "JRE 1.9",
+                "JRE 10",
+                "JRE 11",
+                "JRE 12",
+                "JRE 13",
+                "JRE 14",
+                "JRE 15",
+                "JRE 16",
+                "JRE 17"
+            ],
+            "compilers": [
+                "JDK and OpenJDK 1.3–1.9, 10–17",
+                "IBM JDK 1.7–1.8",
+                "Tomcat Jasper 7",
+                "WebLogic 12.x"
+                ],
+            "extensions": "CLASS, JSP"
+        },
+        { 
+            "name": "JavaScript / TypeScript",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""]
+                }
+            ],
+            "platforms": [""],
+            "versions": ["1"],
+            "compilers": [""],
+            "extensions": "ASP, CSS, EHTML, ES, ES6, HANDLEBARS, HBS, HJS, HTM, HTML, JS, JSX, JSON, JSP, MAP, MUSTACHE, PHP, TS, TSX, VUE, XHTML"
+        },
+        { 
+            "name": "PHP",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""]
+                }
+            ],
+            "platforms": [""],
+            "versions": ["5.2–7.4, 8.0, 8.1"],
+            "compilers": [""],
+            "extensions": "PHP, MODULE, INC, HTML, HTM, PROFILE, INSTALL, ENGINE, THEME, PHP4, PHP5, PHP7, PHTML"
+        },
+        { 
+            "name": "Perl",
+            "variants": [
+                {
+                    "variant": "CGI Applciation only",
+                    "versions": ["5.x"]
+                }
+            ],
+            "platforms": [""],
+            "versions": [""],
+            "compilers": [""],
+            "extensions": "PL, PM, PLX, PL5, CGI"
+        },          
+        { 
+            "name": "Python",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""]
+                }
+            ],
+            "platforms": [""],
+            "versions": [""],
+            "compilers": [""],
+            "extensions": "PY, HTML, HTM"
+        }                
+    ]
+}
