@@ -1,0 +1,79 @@
+{
+    "packaging" : [
+        {
+            "basic" : "You must package applications as EXE, TAR, TAR.GZ, TGZ, ZIP, or SO files. Veracode requires all binary executables, all required libraries, and the complete debug information for the application.",
+            "sca": [
+                "Not Supported."
+            ],
+            "format" : [
+                {
+                    "type" : "LINUX",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "Failure to upload dependencies for Solaris or Linux C/C++ applications results in a warning during prescan." 
+                        },
+                        {
+                            "note": "Dwarf debug symbols are mandatory for main executables. Failure to upload debug symbols for Solaris or Linux C/C++ applications prevents the scan from proceeding."
+                        }
+                    ]
+                }                               
+            ],
+            "special" : [
+                {
+                    "type": "",
+                    "notes": []
+                } 
+            ]
+        }
+    ],
+    "compilation" : [
+        {
+            "basic" : "Ensure that you compile the binary files with debug settings",
+            "code" : "-gdwarf-2 -g3 -O0 -fno-builtin",
+            "notes" : [
+                "Do not compile code with any of these options: ",
+                "-O ",
+                "-mflat ",
+                "-mno-faster-structs ",
+                "-mimpure-text ",
+                "-mcpu={ultrasparc or ultrasparc3} ",
+                "-mtune={ultrasparc or ultrasparc3} ",
+                "-mlittle-endian ",
+                "-mcmodel ",
+                "-mstack-bias ",
+                "-p, -pg, -fprofile-<any> "
+            ]
+       }
+    ],
+    "reference" : [
+        {
+            "type" : "links",
+            "resource": [
+                {
+                    "name": "C/C++ Linux and Solaris Compilation/Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_nix"
+                }
+            ]
+        },
+        {
+            "type" : "videos",
+            "resource": [
+                {
+                    "name": "Start a Static Scan",
+                    "url": "https://www.youtube.com/embed/M-v0dodSavM"
+                }
+            ]
+        },
+        {
+            "type" : "examples",
+            "resource": [
+                {
+                    "name": "C/C++ Example",
+                    "url": "N/A"
+                }
+            ]
+        }
+    ]
+
+}

@@ -1,26 +1,30 @@
 {
     "packaging" : [
         {
-            "basic" : "Veracode expects you to submit JavaScript as a Zip file.",
+            "basic" : "Upload a compressed ZIP archive containing all Perl source code, maintaining the project structure, to Veracode. Do not include third-party packages.",
+            "sca": [
+                "Not Supported"
+            ],
             "format" : [
                 {
                     "type" : "ZIP",
                     "structure": [],
                     "notes": [
                         {
-                            "note": "Do not run npm install and include node modules." 
-                        },
-                        {
-                            "note": "Do not include node_modules." 
+                            "note": "Do not include third-party packages."  
                         }
                     ]
                 }                                           
             ],
-            "special" : [],
-            "sca" : [
-                "For Bower, include package.json and bower.lock file.", 
-                "For NPM, include package.json and package-lock.json file.",
-                "For Yarn, include package.json and yarn.lock file."
+            "special" : [
+                {
+                    "type": "",
+                    "notes": [
+                        {
+                            "note": ""
+                        }
+                    ]
+                } 
             ]
         }
     ],
@@ -36,8 +40,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "JavaScript Packaging Guide",
-                    "url": "https://docs.veracode.com/r/compilation_jscript"
+                    "name": "PHP Compilation/Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_php"
                 }
             ]
         },
@@ -54,8 +58,8 @@
             "type" : "examples",
             "resource": [
                 {
-                    "name": "JavaScript Example",
-                    "url": "https://github.com/veracode/verademo"
+                    "name": "PHP Example",
+                    "url": "N/A"
                 }
             ]
         }

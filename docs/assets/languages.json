@@ -26,44 +26,8 @@
             ],
             "versions": ["1"],
             "compilers": [""],
-            "extensions": [
-                "DLL",
-                "EXE"
-            ]
+            "extensions": "DLL, EXE, PDB"
         },
-        { 
-            "name": "Android",
-            "variants": [
-                {
-                    "variant": "",
-                    "versions": [""]
-                }
-            ],
-            "platforms": [""],
-            "versions": ["1"],
-            "compilers": [""],
-            "extensions": [
-                "APK",
-                "AAB"
-            ]            
-        },        
-        { 
-            "name": "C / C++",
-            "variants": [
-                {
-                    "variant": "",
-                    "versions": [""]
-                }
-            ],
-            "platforms": [""],
-            "versions": ["1"],
-            "compilers": [""],
-            "extensions": [
-                "DLL",
-                "EXE",
-                "SO"
-            ]            
-        },         
         { 
             "name": "Java",
             "variants": [
@@ -99,10 +63,7 @@
                 "Tomcat Jasper 7",
                 "WebLogic 12.x"
                 ],
-            "extensions": [
-                "CLASS",
-                "JSP"
-            ]
+            "extensions": "CLASS, JSP"
         },
         { 
             "name": "JavaScript / TypeScript",
@@ -115,50 +76,8 @@
             "platforms": [""],
             "versions": ["1"],
             "compilers": [""],
-            "extensions": [
-                "ASP",
-                "CSS",
-                "EHTML",
-                "ES",
-                "ES6",
-                "HANDLEBARS",
-                "HBS",
-                "HJS",
-                "HTM",
-                "HTML",
-                "JS",
-                "JSX",
-                "JSON",
-                "JSP",
-                "MAP",
-                "MUSTACHE",
-                "PHP",
-                "TS",
-                "TSX",
-                "VUE",
-                "XHTML"
-            ]            
+            "extensions": "ASP, CSS, EHTML, ES, ES6, HANDLEBARS, HBS, HJS, HTM, HTML, JS, JSX, JSON, JSP, MAP, MUSTACHE, PHP, TS, TSX, VUE, XHTML"
         },
-        { 
-            "name": "iOS",
-            "variants": [
-                {
-                    "variant": "Objective-C, C/C++, Swift 3.x, 4.x, 5.x compiled as bitcode",
-                    "versions": [
-                        "iOS 11–15",
-                        "watchOS 6–8",
-                        "tvOS 14–15"
-                    ]
-                }
-            ],
-            "platforms": ["iOS"],
-            "versions": ["11–15"],
-            "compilers": ["Xcode 9.x–13.2.x"],
-            "extensions": [
-                "BCA",
-                "XARCHIVE"
-            ]            
-        },        
         { 
             "name": "PHP",
             "variants": [
@@ -170,21 +89,7 @@
             "platforms": [""],
             "versions": ["5.2–7.4, 8.0, 8.1"],
             "compilers": [""],
-            "extensions": [
-                "PHP",
-                "MODULE",
-                "INC",
-                "HTML",
-                "HTM",
-                "PROFILE",
-                "INSTALL",
-                "ENGINE",
-                "THEME",
-                "PHP4",
-                "PHP5",
-                "PHP7",
-                "PHTML"
-            ]            
+            "extensions": "PHP, MODULE, INC, HTML, HTM, PROFILE, INSTALL, ENGINE, THEME, PHP4, PHP5, PHP7, PHTML"
         },
         { 
             "name": "Perl",
@@ -197,13 +102,7 @@
             "platforms": [""],
             "versions": [""],
             "compilers": [""],
-            "extensions": [
-                "PL",
-                "PM",
-                "PLX",
-                "PL5",
-                "CGI"
-            ]            
+            "extensions": "PL, PM, PLX, PL5, CGI"
         },          
         { 
             "name": "Python",
@@ -216,11 +115,7 @@
             "platforms": [""],
             "versions": [""],
             "compilers": [""],
-            "extensions": [
-                "PY",
-                "HTML",
-                "HTM"
-            ]            
+            "extensions": "PY, HTML, HTM"
         }                
     ]
 }
