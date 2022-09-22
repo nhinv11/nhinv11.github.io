@@ -3,7 +3,8 @@
         {
             "basic" : "Upload a compressed ZIP archive containing all PHP code and required dependencies to Veracode.",
             "sca": [
-                "Include composer.lock in the root of your ZIP archive. To achieve the most accurate results, also include composer.json."
+                "Include composer.lock in the root of your ZIP archive.",
+                "To achieve the most accurate results, also include composer.json."
             ],
             "format" : [
                 {
@@ -11,20 +12,20 @@
                     "structure": [],
                     "notes": [
                         {
-                            "note": "Submitting third-party libraries for unsupported PHP frameworks may result in additional findings and longer analysis times."  
+                            "note": "Do not include third-party packages."  
                         },
                         {
-                            "note": "Veracode precompiles all PHP code uploaded to the Veracode Platform prior to analysis. The submitted PHP code must be able to compile. Otherwise, the prescan returns a compilation error."
+                            "note": "Do not attempt to upload individual PHP files."
                         }
                     ]
                 }                                           
             ],
             "special" : [
                 {
-                    "type": "",
+                    "type": "Precompile",
                     "notes": [
                         {
-                            "note": ""
+                            "note": "Veracode precompiles all PHP code uploaded to the Veracode Platform prior to analysis. The submitted PHP code must be able to compile. Otherwise, the prescan returns a compilation error."
                         }
                     ]
                 } 
@@ -33,7 +34,7 @@
     ],
     "compilation" : [
         {
-            "basic" : "",
+            "basic" : "Veracode precompiles all PHP code uploaded to the Veracode Platform prior to analysis. The submitted PHP code must be able to compile. Otherwise, the prescan returns a compilation error.",
             "code" : "",
             "notes" : []
        }
@@ -43,7 +44,7 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "PHP Compilation/Packaging Guide",
+                    "name": "Python Compilation/Packaging Guide",
                     "url": "https://docs.veracode.com/r/compilation_php"
                 }
             ]

@@ -201,14 +201,20 @@
             "name": "Android",
             "frameworks": [
                 {
-                    "name": "AWS Mobile SDK for Android",
-                    "versions": "2.2.4",
+                    "name": "Appcelerator Titanium",
+                    "versions": "1.0 and later",
                     "packaging": "",
                     "notes": ""
                 },
                 {
-                    "name": "Parse Android SDK",
-                    "versions": "1.9.4",
+                    "name": "Apache Cordova/Adobe PhoneGap",
+                    "versions": "1.0 and later",
+                    "packaging": "",
+                    "notes": ""
+                },                
+                {
+                    "name": "AWS Mobile SDK for Android",
+                    "versions": "2.2.4",
                     "packaging": "",
                     "notes": ""
                 },
@@ -217,7 +223,13 @@
                     "versions": "2.4",
                     "packaging": "",
                     "notes": ""
-                }
+                }, 
+                {
+                    "name": "Parse Android SDK",
+                    "versions": "1.9.4",
+                    "packaging": "",
+                    "notes": ""
+                }           
             ]   
         },                
         {
@@ -231,7 +243,7 @@
                 },
                 {
                     "name": "Apache Axiom",
-                    "versions": "",
+                    "versions": "*",
                     "packaging": "",
                     "notes": ""
                 },
@@ -569,6 +581,12 @@
                     "versions": "5.x",
                     "packaging": "",
                     "notes": ""
+                },
+                {
+                    "name": "Symfony",
+                    "versions": "5.x, 6.x",
+                    "packaging": "",
+                    "notes": "Initial Support for Symfony 6.x"
                 },
                 {
                     "name": "Zend",

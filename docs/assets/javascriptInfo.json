@@ -9,9 +9,6 @@
                     "notes": [
                         {
                             "note": "Do not run npm install and include node modules." 
-                        },
-                        {
-                            "note": "Do not include node_modules." 
                         }
                     ]
                 }                                           
@@ -55,7 +52,7 @@
             "resource": [
                 {
                     "name": "JavaScript Example",
-                    "url": "https://github.com/veracode/verademo"
+                    "url": "https://github.com/srcclr/example-javascript-vulnerable-methods"
                 }
             ]
         }

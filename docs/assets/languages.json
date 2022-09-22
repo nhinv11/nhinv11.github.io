@@ -26,7 +26,7 @@
             ],
             "versions": ["1"],
             "compilers": [""],
-            "extensions": "DLL, EXE, PDB"
+            "extensions": "DLL, EXE, NUPKG, PDB"
         },
         { 
             "name": "Java",
@@ -83,7 +83,7 @@
             "variants": [
                 {
                     "variant": "",
-                    "versions": [""]
+                    "versions": ["5.2–7.4, 8.0, 8.1"]
                 }
             ],
             "platforms": [""],
@@ -100,7 +100,7 @@
                 }
             ],
             "platforms": [""],
-            "versions": [""],
+            "versions": ["5.x"],
             "compilers": [""],
             "extensions": "PL, PM, PLX, PL5, CGI"
         },          
@@ -109,11 +109,11 @@
             "variants": [
                 {
                     "variant": "",
-                    "versions": [""]
+                    "versions": []
                 }
             ],
             "platforms": [""],
-            "versions": [""],
+            "versions": ["2.x, 3.x"],
             "compilers": [""],
             "extensions": "PY, HTML, HTM"
         }                
