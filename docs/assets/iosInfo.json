@@ -40,8 +40,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "Python Compilation/Packaging Guide",
-                    "url": "https://docs.veracode.com/r/compilation_perl"
+                    "name": "iOS Compilation/Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_ios"
                 }
             ]
         },
@@ -58,7 +58,7 @@
             "type" : "examples",
             "resource": [
                 {
-                    "name": "Perl Example",
+                    "name": "iOS Example",
                     "url": "N/A"
                 }
             ]

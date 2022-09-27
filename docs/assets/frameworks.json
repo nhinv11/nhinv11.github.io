@@ -209,8 +209,8 @@
                 {
                     "name": "Apache Cordova/Adobe PhoneGap",
                     "versions": "1.0 and later",
-                    "packaging": "",
-                    "notes": ""
+                    "packaging": "Veracode strongly recommends that you submit applications that have not been processed with a JavaScript minifier or obfuscation tool. Minified JavaScript can increase the difficulty in reviewing flaw results because line-number information can become obscured.",
+                    "notes": "Veracode requires your Adobe PhoneGap/Apache Cordova application to be a compiled Android package (APK)"
                 },                
                 {
                     "name": "AWS Mobile SDK for Android",
@@ -231,7 +231,24 @@
                     "notes": ""
                 }           
             ]   
-        },                
+        },
+        {
+            "name": "Go",
+            "frameworks": [
+                {
+                    "name": "Gorilla",
+                    "versions": "*",
+                    "packaging": "",
+                    "notes": "Includes support for mux, handlers, HTTP, session, and additional Gorilla components"
+                },
+                {
+                    "name": "Gin Web Framework (Gin-Gonic)",
+                    "versions": "1.7.x",
+                    "packaging": "",
+                    "notes": ""
+                }
+            ]   
+        } ,                
         {
             "name": "Java",
             "frameworks": [
@@ -663,6 +680,17 @@
                 {
                     "name": "SQLAlchemy",
                     "versions": ".9.x–1.0.x",
+                    "packaging": "",
+                    "notes": ""
+                }
+            ]   
+        },
+        {
+            "name": "Ruby",
+            "frameworks": [
+                {
+                    "name": "Rails",
+                    "versions": "3.x–7.0",
                     "packaging": "",
                     "notes": ""
                 }

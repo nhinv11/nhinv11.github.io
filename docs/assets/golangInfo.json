@@ -1,17 +1,37 @@
 {
     "packaging" : [
         {
-            "basic" : "Upload a compressed ZIP archive containing all Perl source code, maintaining the project structure, to Veracode.",
+            "basic" : "Veracode uses functionality in the standard Go compiler when analyzing applications, and requires that the application is packaged in a structure that can be compiled. Package the source directory for a single compilable Go executable as a compressed ZIP archive.",
             "sca": [
-                "Not Supported."
+                "Dep - Include gopkg.lock in the root of your ZIP archive.",
+                "Glide - Include glide.lock in the root of your ZIP archive.",
+                "Go Modules - Include go.sum in the root of your ZIP archive. Veracode recommends using Veracode SCA with Go version 1.14 or later so that it can use the content of the vendor directory to exclude non-vendored dependencies from scan results.",
+                "Godep - Include godeps/godeps.lock in the root of your ZIP archive.",
+                "Govendor - Include vendor/vendor.json in the root of your ZIP archive."
             ],
             "format" : [
                 {
                     "type" : "ZIP",
-                    "structure": [],
+                    "structure": [
+                        {
+                            "folders": "/app/"
+                        },
+                        {
+                            "folders": "/app/main.go"
+                        },
+                        {
+                            "folders": "/app/pkg/*.go"
+                        },
+                        {
+                            "folders": "/app/internal/*.go"
+                        },
+                        {
+                            "folders": "/app/vendor/<libraries>/"
+                        }
+                    ],
                     "notes": [
                         {
-                            "note": "Do not include third-party packages."  
+                            "note": ""  
                         }
                     ]
                 }                                           
@@ -40,8 +60,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "Python Compilation/Packaging Guide",
-                    "url": "https://docs.veracode.com/r/compilation_perl"
+                    "name": "Go Compilation/Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_go"
                 }
             ]
         },
@@ -58,7 +78,7 @@
             "type" : "examples",
             "resource": [
                 {
-                    "name": "Perl Example",
+                    "name": "Go Example",
                     "url": "N/A"
                 }
             ]

@@ -1,20 +1,67 @@
 {
     "packaging" : [
         {
-            "basic" : "Upload a compressed ZIP archive containing all Perl source code, maintaining the project structure, to Veracode.",
+            "basic" : "Veracode supports scanning Android applications written in Java and Kotlin and packaged as an Android Package (APK) or Android App Bundle (AAB)",
             "sca": [
                 "Not Supported."
             ],
             "format" : [
                 {
-                    "type" : "ZIP",
-                    "structure": [],
+                    "type" : "AAB",
+                    "structure": [                        
+                        {
+                            "folders": "/asset_pack_*/"
+                        },
+                        {
+                            "folders": "base"
+                        },
+                        {
+                            "folders": "/BUNDLE-METADATA/"
+                        },
+                        {
+                            "folders": "/lib/"
+                        },
+                        {
+                            "folders": "/res/"
+                        },
+                        {
+                            "folders": "/root/"
+                        },
+                        {
+                            "folders": "/manifest/AndroidManifest.xml"
+                        }
+                    ],
                     "notes": [
                         {
-                            "note": "Do not include third-party packages."  
+                            "note": ""  
                         }
                     ]
-                }                                           
+                },
+                {
+                    "type" : "APK",
+                    "structure": [                        
+                        {
+                            "folders": "/META-INF/"
+                        },
+                        {
+                            "folders": "/assets/"
+                        },
+                        {
+                            "folders": "/lib/"
+                        },
+                        {
+                            "folders": "/res/"
+                        },
+                        {
+                            "folders": "/AndroidManifest.xml"
+                        }
+                    ],
+                    "notes": [
+                        {
+                            "note": ""  
+                        }
+                    ]
+                }                                            
             ],
             "special" : [
                 {
@@ -30,8 +77,8 @@
     ],
     "compilation" : [
         {
-            "basic" : "",
-            "code" : "",
+            "basic" : "Veracode can analyze Android application code with or without debug symbols. When you provide debug builds of Android application code, Veracode can provide source file and line number information about the location of findings.",
+            "code" : "javac -g foo.java",
             "notes" : []
        }
     ],
@@ -40,8 +87,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "Python Compilation/Packaging Guide",
-                    "url": "https://docs.veracode.com/r/compilation_perl"
+                    "name": "Android Compilation/Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_Android"
                 }
             ]
         },
@@ -58,7 +105,7 @@
             "type" : "examples",
             "resource": [
                 {
-                    "name": "Perl Example",
+                    "name": "Android Example",
                     "url": "N/A"
                 }
             ]

@@ -1,9 +1,9 @@
 {
     "packaging" : [
         {
-            "basic" : "Upload a compressed ZIP archive containing all Perl source code, maintaining the project structure, to Veracode.",
+            "basic" : "Before uploading your Ruby on Rails code, Veracode requires you to run a special packaging gem. The gem uses features introduced in Ruby 1.9 to translate your application to an archive format that Veracode can scan. ",
             "sca": [
-                "Not Supported."
+                "Include Gemfile.lock"
             ],
             "format" : [
                 {
@@ -21,7 +21,7 @@
                     "type": "",
                     "notes": [
                         {
-                            "note": ""
+                            "note": "Veracode recommends installing the gem using Bundler. Because the gem is included in the list of dependencies for your application, Veracode recommends making a clean copy of the application source. Veracode also recommends using RVM to set up a clean Ruby environment before installing and running the gem."
                         }
                     ]
                 } 
@@ -40,8 +40,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "Python Compilation/Packaging Guide",
-                    "url": "https://docs.veracode.com/r/compilation_perl"
+                    "name": "Ruby Compilation/Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_ruby"
                 }
             ]
         },
@@ -58,7 +58,7 @@
             "type" : "examples",
             "resource": [
                 {
-                    "name": "Perl Example",
+                    "name": "Ruby Example",
                     "url": "N/A"
                 }
             ]

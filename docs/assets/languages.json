@@ -29,6 +29,32 @@
             "extensions": "DLL, EXE, NUPKG, PDB"
         },
         { 
+            "name": "Android",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""]
+                }
+            ],
+            "platforms": [""],
+            "versions": ["Android 2.2-12 (API Levels 8-31)"],
+            "compilers": [""],
+            "extensions": "JAVA, KT"
+        },
+        { 
+            "name": "Go",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""]
+                }
+            ],
+            "platforms": [""],
+            "versions": ["1.17"],
+            "compilers": [""],
+            "extensions": "GO"
+        },
+        { 
             "name": "Java",
             "variants": [
                 {
@@ -116,6 +142,19 @@
             "versions": ["2.x, 3.x"],
             "compilers": [""],
             "extensions": "PY, HTML, HTM"
+        },          
+        { 
+            "name": "Ruby",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": []
+                }
+            ],
+            "platforms": ["Ruby on Rails"],
+            "versions": ["1.9.3, 2.0.x, 2.1.x, 2.3–2.7, 3.x"],
+            "compilers": [""],
+            "extensions": "RB, ERB"
         }                
     ]
 }

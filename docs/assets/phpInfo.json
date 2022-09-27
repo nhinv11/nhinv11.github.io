@@ -44,7 +44,7 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "Python Compilation/Packaging Guide",
+                    "name": "PHP Compilation/Packaging Guide",
                     "url": "https://docs.veracode.com/r/compilation_php"
                 }
             ]
