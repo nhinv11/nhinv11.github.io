@@ -1,0 +1,95 @@
+{
+    "packaging" : [
+        {
+            "basic" : "Build a Java Web Archive (WAR) file for uploading to Veracode",
+            "sca": [
+                "Not Supported."
+            ],
+            "format" : [
+                {
+                    "type" : "",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": ""  
+                        }
+                    ]
+                }                                           
+            ],
+            "special" : [
+                {
+                    "type": "",
+                    "notes": [
+                        {
+                            "note": "1. Log in to ColdFusion Administrator."
+                        },
+                        {
+                            "note": "2. Choose Packaging and Deployment > J2EE Archives."
+                        },
+                        {
+                            "note": "3. Add a new archive of type WAR. The application directory is the location of the compiled application, for example: c:\\mycfappbin."
+                        },
+                        {
+                            "note": "4. Place the finished WAR archive in the distribution directory."
+                        },
+                        {
+                            "note": "5. Add any related data sources."
+                        },
+                        {
+                            "note": "6. Clear the Include CFML Source checkbox."
+                        },
+                        {
+                            "note": "7. Clear the Include CF Administratorcheckbox."
+                        },
+                        {
+                            "note": "8. Clear the Disable Debugging checkbox."
+                        },
+                        {
+                            "note": "9. Submit and wait for the WAR packaging to complete. The resulting WAR file might be large, at least 100 MB"
+                        },
+                        {
+                            "note": "10. Upload the resulting WAR file to Veracode."
+                        }
+                    ]
+                } 
+            ]
+        }
+    ],
+    "compilation" : [
+        {
+            "basic" : "Veracode analyzes ColdFusion applications you compile into Java.",
+            "code" : "c:\\coldfusion8\\bin\\cfcompile -deploy c:\\mycfwebroot c:\\mycfapp c:\\mycfappbin",
+            "notes" : ["To compile your application CFML files to Java classfiles, use the cfcompile utility with the -deploy option. On Windows, you can usually find this utility installed in c:\\coldfusion8\\bin or c:\\coldfusion9\\bin.","This sample command compiles all CFML files in c:mycfapp and places them in c:mycfappbin."]
+       }
+    ],
+    "reference" : [
+        {
+            "type" : "links",
+            "resource": [
+                {
+                    "name": "ColdFusion Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_CF"
+                }
+            ]
+        },
+        {
+            "type" : "videos",
+            "resource": [
+                {
+                    "name": "Start a Static Scan",
+                    "url": "https://www.youtube.com/embed/M-v0dodSavM"
+                }
+            ]
+        },
+        {
+            "type" : "examples",
+            "resource": [
+                {
+                    "name": "Example",
+                    "url": "N/A"
+                }
+            ]
+        }
+    ]
+
+}

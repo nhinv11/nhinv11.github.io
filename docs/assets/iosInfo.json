@@ -1,27 +1,90 @@
 {
     "packaging" : [
         {
-            "basic" : "Upload a compressed ZIP archive containing all Perl source code, maintaining the project structure, to Veracode.",
+            "basic" : "To submit your iOS application to the Veracode Platform, Veracode requires that you package your application by archiving the generated .xcarchive folder in ZIP format. You must manually create the package because Xcode does not bundle the debug information automatically in a portable format.",
             "sca": [
-                "Not Supported."
+                "Include Podfile.lock in your root of your ZIP archive for submission. "
             ],
             "format" : [
                 {
-                    "type" : "ZIP",
+                    "type" : "BCA",
                     "structure": [],
                     "notes": [
                         {
-                            "note": "Do not include third-party packages."  
+                            "note": "To create a BCA package:"  
+                        },
+                        {
+                            "note": "1 . Navigate to the Xcode archive that contains the compiled iOS application. The archive is usually located in: ~/Library/Developer/Xcode/Archives."  
+                        },
+                        {
+                            "note": "2. In macOS, right-click the archive and select Show Package Contents."  
+                        },
+                        {
+                            "note": "3. Expand the Products folder and select the Applications folder"  
+                        },
+                        {
+                            "note": "4. Move the Applications folder out of the Projects folder, and place it in the parent directory."  
+                        },
+                        {
+                            "note": "5. Rename the Applications folder to Payload."  
+                        },
+                        {
+                            "note": "6. Delete the Products folder. Optionally, you can exclude the SwiftSupport or SCMBlueprint folders if they exist in the Projects folder."  
+                        },
+                        {
+                            "note": "7. Create a ZIP archive containing the Payload folder. Highlight all items in the directory, right-click, and select Compress."  
+                        },
+                        {
+                            "note": "8. Right-click the file Archive.zip and select Get Info."  
+                        },
+                        {
+                            "note": "9. Under Name & Extension, rename the archive to <project title>.bca."  
+                        },
+                        {
+                            "note": "10. When prompted, click Use .bca to change the extension."  
+                        },
+                        {
+                            "note": "11. Move the new BCA file to a new location on your computer. You upload this BCA file to the Veracode Platform."
+                        },
+                        {
+                            "note": "You can now upload your iOS application to the Veracode Platform for analysis."
+                        }                        
+                    ]
+                },
+                {
+                    "type" : "IPA",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "See Packaging Guidance for respective Cross-Platform framework."  
                         }
                     ]
-                }                                           
+                },
+                {
+                    "type" : "XARCHIVE",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "If you cannot package your application using the Veracode Mobile Application Packager, you can package your application manually using these instructions:"  
+                        },
+                        {
+                            "note": "1. Navigate to the Xcode archive that contains the compiled iOS application. The archive is usually located in ~/Library/Developer/Xcode/Archives."  
+                        },
+                        {
+                            "note": "2. To create a ZIP archive, highlight the .xcarchive folder, right-click the folder, and select Compress."  
+                        },
+                        {
+                            "note": "3. Optionally, rename the resulting archive file. Ensure that you preserve the ZIP extension. You upload this file to the Veracode Platform."  
+                        }
+                    ]
+                }                                            
             ],
             "special" : [
                 {
                     "type": "",
                     "notes": [
                         {
-                            "note": ""
+                            "note": "Veracode provides a mobile application packager for Xcode that can help package iOS applications built with Xcode 11.x or later. Veracode recommends you use this tool to prepare your application for analysis on the Veracode Platform. View the instructions on installing and using the Veracode Mobile Application Packager."
                         }
                     ]
                 } 
@@ -30,9 +93,9 @@
     ],
     "compilation" : [
         {
-            "basic" : "",
-            "code" : "",
-            "notes" : []
+            "basic" : "Veracode requires that all components of iOS applications support bitcode.",
+            "code" : "xcodebuild archive -project MyApp.xcodeproj -scheme MyApp -destination generic/platform=iOS DEBUG_INFORMATION_FORMAT=dwarf-with-dsym ENABLE_BITCODE=YES",
+            "notes" : ["1. Launch Xcode, and select the Project and Signing Profile.", "2. In the Project Navigator, select the Project and its target to display the project editor.", "3. Go to Build Settings and select All instead of Basic.", "4. Go to Build Settings > Build Options > Debug Information Format and set the values to DWARF with dSYM file.","5. Go to Build Settings > Build Options > Enable Bitcode and set the value to Yes.", "6. Select Product > Scheme > Edit Scheme, then, click Archive.","7. For Build Configuration, select Debug.","8. In the Xcode project editor, choose Generic iOS Device from the Scheme menu.","9. Go to the Product menu option and select Archive.","10. After the archiving process completes, the Xcode Organizer shows your archive highlighted.","11. Right-click the project and choose Show in Finder.","If you compile your application from the command line, you still must set the archive build configuration in the project scheme to Debug. To set the archive build configuration, go to Product > Scheme > Edit Scheme > Archive > Build Configuration > and select Debug."]
        }
     ],
     "reference" : [
@@ -42,6 +105,10 @@
                 {
                     "name": "iOS Compilation/Packaging Guide",
                     "url": "https://docs.veracode.com/r/compilation_ios"
+                },
+                {
+                    "name": "Veracode Mobile Application Packager",
+                    "url": "https://docs.veracode.com/r/t_install_xcode"
                 }
             ]
         },

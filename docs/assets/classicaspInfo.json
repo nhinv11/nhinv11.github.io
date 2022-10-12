@@ -1,0 +1,68 @@
+{
+    "packaging" : [
+        {
+            "basic" : "Veracode requires all source files for this language. Upload a compressed ZIP archive to Veracode containing all Classic ASP, VBScript, and ActiveX code and required dependencies. Do not attempt to upload individual Classic ASP files.",
+            "sca": [
+                "Not Supported."
+            ],
+            "format" : [
+                {
+                    "type" : "",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": ""  
+                        }
+                    ]
+                }                                           
+            ],
+            "special" : [
+                {
+                    "type": "",
+                    "notes": [
+                        {
+                            "note": "Do not upload a combination of Classic ASP files and Windows DLL or EXE files in the same archive. Uploading a combination of Classic ASP and modules written in other languages delays the delivery of your scan results."
+                        }
+                    ]
+                } 
+            ]
+        }
+    ],
+    "compilation" : [
+        {
+            "basic" : "",
+            "code" : "",
+            "notes" : []
+       }
+    ],
+    "reference" : [
+        {
+            "type" : "links",
+            "resource": [
+                {
+                    "name": "Classic ASP Compilation/Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_ASPclassic"
+                }
+            ]
+        },
+        {
+            "type" : "videos",
+            "resource": [
+                {
+                    "name": "Start a Static Scan",
+                    "url": "https://www.youtube.com/embed/M-v0dodSavM"
+                }
+            ]
+        },
+        {
+            "type" : "examples",
+            "resource": [
+                {
+                    "name": "Example",
+                    "url": "N/A"
+                }
+            ]
+        }
+    ]
+
+}

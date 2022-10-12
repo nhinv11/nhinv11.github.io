@@ -233,6 +233,62 @@
             ]   
         },
         {
+            "name": "Apex",
+            "frameworks": [
+                {
+                    "name": "Aura (Lightning) Components",
+                    "versions": "52.0 and earlier",
+                    "packaging": "",
+                    "notes": "Files must be UTF-8 encoded."
+                },
+                {
+                    "name": "Lightning Web Components",
+                    "versions": "52.0 and earlier",
+                    "packaging": "Include all Lightning component source, including any application pages, component files, HTML templates, and JavaScript code from Lightning web components.",
+                    "notes": "Files must be UTF-8 encoded."
+                },
+                {
+                    "name": "Visualforce Pages",
+                    "versions": "52.0 and earlier",
+                    "packaging": "Include all Visualforce pages.",
+                    "notes": "Files must be UTF-8 encoded."
+                }
+            ]   
+        },
+        {
+            "name": "Classic ASP",
+            "frameworks": [
+                {
+                    "name": "",
+                    "versions": "",
+                    "packaging": "",
+                    "notes": ""
+                }
+            ]   
+        },
+        {
+            "name": "COBOL",
+            "frameworks": [
+                {
+                    "name": "",
+                    "versions": "",
+                    "packaging": "",
+                    "notes": ""
+                }
+            ]   
+        },
+        {
+            "name": "ColdFusion",
+            "frameworks": [
+                {
+                    "name": "",
+                    "versions": "",
+                    "packaging": "",
+                    "notes": ""
+                }
+            ]   
+        },
+        {
             "name": "Go",
             "frameworks": [
                 {
@@ -248,7 +304,18 @@
                     "notes": ""
                 }
             ]   
-        } ,                
+        },
+        {
+            "name": "Groovy",
+            "frameworks": [
+                {
+                    "name": "Grails",
+                    "versions": "3.2-3.3, 4.0",
+                    "packaging": "",
+                    "notes": ""
+                }
+            ]   
+        },                
         {
             "name": "Java",
             "frameworks": [
@@ -577,13 +644,19 @@
             "name": "iOS",
             "frameworks": [
                 {
+                    "name": "iOS",
+                    "versions": "11-16",
+                    "packaging": "",
+                    "notes": ""
+                },
+                {
                     "name": "tvOS",
                     "versions": "14-15",
                     "packaging": "",
                     "notes": ""
                 },
                 {
-                    "name": "watchOS",
+                    "name": "wearOS",
                     "versions": "6-8",
                     "packaging": "",
                     "notes": ""
@@ -686,11 +759,45 @@
             ]   
         },
         {
+            "name": "RPG",
+            "frameworks": [
+                {
+                    "name": "",
+                    "versions": "",
+                    "packaging": "",
+                    "notes": ""
+                }
+            ]   
+        },
+        {
             "name": "Ruby",
             "frameworks": [
                 {
                     "name": "Rails",
                     "versions": "3.x–7.0",
+                    "packaging": "",
+                    "notes": ""
+                }
+            ]   
+        },
+        {
+            "name": "Scala",
+            "frameworks": [
+                {
+                    "name": "Akka",
+                    "versions": "2.5",
+                    "packaging": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Play",
+                    "versions": "2.0–2.7.x",
+                    "packaging": "",
+                    "notes": ""
+                },
+                {
+                    "name": "Slick",
+                    "versions": "3.x",
                     "packaging": "",
                     "notes": ""
                 }

@@ -1,0 +1,74 @@
+{
+    "packaging" : [
+        {
+            "basic" : "Veracode recommends that you submit your COBOL source files as separate files in an archive. Do not concatenate COBOL into a single file for analysis.",
+            "sca": [
+                "Not Supported."
+            ],
+            "format" : [
+                {
+                    "type" : "",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": ""  
+                        }
+                    ]
+                }                                           
+            ],
+            "special" : [
+                {
+                    "type": "",
+                    "notes": [
+                        {
+                            "note": "Veracode does not support EBCDIC encoding."
+                        },
+                        {
+                            "note": "Veracode does not require you to provide copybooks for scans. If available, copybooks provide increased scan coverage and accuracy. You must extract each program into its source file. Veracode ignores source files with unsupported extensions or text files without extensions."
+                        },
+                        {
+                            "note": "Veracode does not support syntax split between the main program and the imported copybook. Veracode parses each file as an independent unit. If Veracode successfully parses the imported copybook, Veracode appends the syntax tree at the referencing node of the main program. You must comment out any incomplete statements in copybooks and the main program. You can still scan the main program if it is syntactically correct, even if the imported copybook is not resolved or fails to parse."
+                        }
+                    ]
+                } 
+            ]
+        }
+    ],
+    "compilation" : [
+        {
+            "basic" : "",
+            "code" : "",
+            "notes" : []
+       }
+    ],
+    "reference" : [
+        {
+            "type" : "links",
+            "resource": [
+                {
+                    "name": "Cobol Packaging Guide",
+                    "url": "https://docs.veracode.com/r/c_compilation_cobol"
+                }
+            ]
+        },
+        {
+            "type" : "videos",
+            "resource": [
+                {
+                    "name": "Start a Static Scan",
+                    "url": "https://www.youtube.com/embed/M-v0dodSavM"
+                }
+            ]
+        },
+        {
+            "type" : "examples",
+            "resource": [
+                {
+                    "name": "Example",
+                    "url": "N/A"
+                }
+            ]
+        }
+    ]
+
+}

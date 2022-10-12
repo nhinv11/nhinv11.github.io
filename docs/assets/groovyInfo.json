@@ -1,0 +1,68 @@
+{
+    "packaging" : [
+        {
+            "basic" : "You must compile and submit Groovy applications as JAR or WAR files. Submit debug symbols for as much of the application as possible.",
+            "sca": [
+                "Not Supported."
+            ],
+            "format" : [
+                {
+                    "type" : "",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": ""  
+                        }
+                    ]
+                }                                           
+            ],
+            "special" : [
+                {
+                    "type": "",
+                    "notes": [
+                        {
+                            "note": ""
+                        }
+                    ]
+                } 
+            ]
+        }
+    ],
+    "compilation" : [
+        {
+            "basic" : "Compile Groovy application with Debug enabled.",
+            "code" : "",
+            "notes" : ["Compile using the Grails command-line system or IDEs that wrap Groovy and Grails, such as IntelliJ or the Groovy/Grails Tool Suite (GGTS)"]
+       }
+    ],
+    "reference" : [
+        {
+            "type" : "links",
+            "resource": [
+                {
+                    "name": "Groovy Compilation/Packaging Guide",
+                    "url": "https://docs.veracode.com/r/c_compilation_groovy"
+                }
+            ]
+        },
+        {
+            "type" : "videos",
+            "resource": [
+                {
+                    "name": "Start a Static Scan",
+                    "url": "https://www.youtube.com/embed/M-v0dodSavM"
+                }
+            ]
+        },
+        {
+            "type" : "examples",
+            "resource": [
+                {
+                    "name": "Groovy Example",
+                    "url": "N/A"
+                }
+            ]
+        }
+    ]
+
+}

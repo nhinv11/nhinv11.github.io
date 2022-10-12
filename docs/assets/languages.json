@@ -2,6 +2,7 @@
     "languages": [
         {
             "name": ".NET",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
             "variants": [
             { 
                 "variant": "C#, VB.NET",
@@ -9,13 +10,15 @@
                     ".NET 2.0, 3.0, 3.5, 4.0, 4.5–4.8, 5.0, 6.0",
                     ".NET Core 3.1 and earlier",
                     ".NET Standard 2.0–2.1"
-                ]
+                ],
+                "extensions": ""
             },
             {
                 "variant": "C++/CLI",
                 "versions": [
                     ".NET 2.0, 3.0, 3.5, 4.0, 4.5–4.8 (CLR 2.0)"
-                ]
+                ],
+                "extensions": ""
             }
             ],
             "platforms": [
@@ -30,10 +33,13 @@
         },
         { 
             "name": "Android",
+            "altname": "Android",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
             "variants": [
                 {
                     "variant": "",
-                    "versions": [""]
+                    "versions": [""],
+                    "extensions": ""
                 }
             ],
             "platforms": [""],
@@ -42,11 +48,139 @@
             "extensions": "JAVA, KT"
         },
         { 
-            "name": "Go",
+            "name": "Apex",
+            "altname": "Apex",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg",
             "variants": [
                 {
                     "variant": "",
-                    "versions": [""]
+                    "versions": [""],
+                    "extensions": ""
+                }
+            ],
+            "platforms": [""],
+            "versions": ["52.0 and earlier"],
+            "compilers": [""],
+            "extensions": "ASP, CLS, CMP, COMPONENT, EVT, PAGE, TGR, TRIGGER, VFP"
+        },
+        { 
+            "name": "Classic ASP",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-classicasp-plain",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""],
+                    "extensions": ""
+                }
+            ],
+            "platforms": ["Windows"],
+            "versions": ["1.x, 2.x, 3.0"],
+            "compilers": [""],
+            "extensions": "ASA, ASP, GRP, INC, JS, OCX"
+        },
+        { 
+            "name": "COBOL",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-cobol-plain",
+            "variants": [
+                {
+                    "variant": "Enterprise COBOL for z/OS",
+                    "versions": ["3.1–6.2"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "IBM ILE COBOL",
+                    "versions": ["7.0"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "MicroFocus COBOL (Net Express)",
+                    "versions": ["5.0"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "AcuCOBOL-GT",
+                    "versions": ["10.3"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "COBOL-85",
+                    "versions": ["*"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "SCOBOL",
+                    "versions": ["*"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "COBOL-2002",
+                    "versions": ["*"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "HP COBOL Tandem for TNS / TNS/R",
+                    "versions": ["*"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "COBOL/400",
+                    "versions": ["*"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "COBOL for OS/390",
+                    "versions": ["*"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "COBOL for OS/370",
+                    "versions": ["*"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "COBOL for MVS",
+                    "versions": ["*"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "OS/VS COBOL",
+                    "versions": ["*"],
+                    "extensions": ""
+                },
+                {
+                    "variant": "VS COBOL II",
+                    "versions": ["*"],
+                    "extensions": ""
+                }
+            ],
+            "platforms": [""],
+            "versions": [""],
+            "compilers": [""],
+            "extensions": "COB, CBL, COBOL, CPY, PCO"
+        },
+        { 
+            "name": "ColdFusion",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-coldfusion-plain",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""],
+                    "extensions": ""
+                }
+            ],
+            "platforms": ["Deployed as Java"],
+            "versions": ["7-11, 2016"],
+            "compilers": ["7–11, 2016 (cfcompile.exe)"],
+            "extensions": "CFC, CFM, CFML"
+        },
+        { 
+            "name": "Go",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""],
+                    "extensions": ""
                 }
             ],
             "platforms": [""],
@@ -55,11 +189,28 @@
             "extensions": "GO"
         },
         { 
-            "name": "Java",
+            "name": "Groovy",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/groovy/groovy-original.svg",
             "variants": [
                 {
                     "variant": "",
-                    "versions": [""]
+                    "versions": [""],
+                    "extensions": ""
+                }
+            ],
+            "platforms": ["JVM 1.6–1.9, 10–15"],
+            "versions": ["2.4–2.6, 3.0"],
+            "compilers": ["groovyc 2.4–2.6, 3.0 targeted for JDK7+"],
+            "extensions": "GROOVY"
+        },
+        { 
+            "name": "Java",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""],
+                    "extensions": ""
                 }
             ],
             "platforms": [
@@ -67,22 +218,7 @@
                 "Java EE", 
                 "JSP"
             ],
-            "versions": [
-                "JRE 1.4",
-                "JRE 1.5",
-                "JRE 1.6",
-                "JRE 1.7",
-                "JRE 1.8",
-                "JRE 1.9",
-                "JRE 10",
-                "JRE 11",
-                "JRE 12",
-                "JRE 13",
-                "JRE 14",
-                "JRE 15",
-                "JRE 16",
-                "JRE 17"
-            ],
+            "versions": ["JRE 1.4-1.9, 10-18"],
             "compilers": [
                 "JDK and OpenJDK 1.3–1.9, 10–17",
                 "IBM JDK 1.7–1.8",
@@ -93,10 +229,12 @@
         },
         { 
             "name": "JavaScript / TypeScript",
+            "image": "/assets/images/ts-js.png",
             "variants": [
                 {
                     "variant": "",
-                    "versions": [""]
+                    "versions": [""],
+                    "extensions": ""
                 }
             ],
             "platforms": [""],
@@ -105,11 +243,43 @@
             "extensions": "ASP, CSS, EHTML, ES, ES6, HANDLEBARS, HBS, HJS, HTM, HTML, JS, JSX, JSON, JSP, MAP, MUSTACHE, PHP, TS, TSX, VUE, XHTML"
         },
         { 
-            "name": "PHP",
+            "name": "Kotlin",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
             "variants": [
                 {
                     "variant": "",
-                    "versions": ["5.2–7.4, 8.0, 8.1"]
+                    "versions": [""],
+                    "extensions": ""
+                }
+            ],
+            "platforms": [""],
+            "versions": ["1.6 and earlier"],
+            "compilers": ["java, kotlinc"],
+            "extensions": "KT"
+        },
+        { 
+            "name": "iOS",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""],
+                    "extensions": ""
+                }
+            ],
+            "platforms": ["iOS"],
+            "versions": ["11-16"],
+            "compilers": [""],
+            "extensions": ""
+        },
+        { 
+            "name": "PHP",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": ["5.2–7.4, 8.0, 8.1"],
+                    "extensions": ""
                 }
             ],
             "platforms": [""],
@@ -119,10 +289,12 @@
         },
         { 
             "name": "Perl",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg",
             "variants": [
                 {
                     "variant": "CGI Applciation only",
-                    "versions": ["5.x"]
+                    "versions": ["5.x"],
+                    "extensions": ""
                 }
             ],
             "platforms": [""],
@@ -132,10 +304,12 @@
         },          
         { 
             "name": "Python",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
             "variants": [
                 {
                     "variant": "",
-                    "versions": []
+                    "versions": [],
+                    "extensions": ""
                 }
             ],
             "platforms": [""],
@@ -144,17 +318,84 @@
             "extensions": "PY, HTML, HTM"
         },          
         { 
-            "name": "Ruby",
+            "name": "RPG",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-rpg-plain",
             "variants": [
                 {
                     "variant": "",
-                    "versions": []
+                    "versions": [],
+                    "extensions": ""
+                }
+            ],
+            "platforms": ["BM iSeries, pSeries"],
+            "versions": ["RPG III, RPG IV, RPGLE"],
+            "compilers": [""],
+            "extensions": "PF, LF, DSPF, PRTF, ICF"
+        },          
+        { 
+            "name": "Ruby",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [],
+                    "extensions": ""
                 }
             ],
             "platforms": ["Ruby on Rails"],
             "versions": ["1.9.3, 2.0.x, 2.1.x, 2.3–2.7, 3.x"],
             "compilers": [""],
             "extensions": "RB, ERB"
-        }                
+        },          
+        { 
+            "name": "Scala",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original-wordmark.svg",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [],
+                    "extensions": ""
+                }
+            ],
+            "platforms": ["JVM 1.6–1.9, 10"],
+            "versions": ["2.13 and earlier"],
+            "compilers": ["scalac 2.13 and earlier","javac 1.6–1.8"],
+            "extensions": "PF, LF, DSPF, PRTF, ICF"
+        },          
+        { 
+            "name": "SQL",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-sql-plain",
+            "variants": [
+                {
+                    "variant": "PL/SQL",
+                    "versions": ["Oracle 18c, 19c, 21c"],
+                    "extensions": "FNC, PCK, PKB, PKS, PLS, PRC, SQL, TPB, TPS, TRG, VW"
+                },
+                {
+                    "variant": "Transact-SQL",
+                    "versions": ["15.x and earlier (SQL Server 2019)"],
+                    "extensions": "SQL"
+                }
+            ],
+            "platforms": [""],
+            "versions": [""],
+            "compilers": [""],
+            "extensions": ""
+        },          
+        { 
+            "name": "VB 6",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-vb6-plain",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [],
+                    "extensions": ""
+                }
+            ],
+            "platforms": ["Windows"],
+            "versions": ["6.0"],
+            "compilers": [""],
+            "extensions": "BAS, CLS, CTL, CTX, FRM, VBG, VBP"
+        }                 
     ]
 }
