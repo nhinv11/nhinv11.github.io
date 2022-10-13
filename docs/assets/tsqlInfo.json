@@ -1,9 +1,9 @@
 {
     "packaging" : [
         {
-            "basic" : "You must submit Kotlin applications as JAR or WAR files.",
+            "basic" : "Upload to Veracode a ZIP archive containing all T-SQL code. Files must be UTF-8 encoded. Do not upload individual T-SQL source files to the Veracode Platform.",
             "sca": [
-                "Include dependency JARs as part of your upload."
+                "Not Supported."
             ],
             "format" : [
                 {
@@ -21,8 +21,14 @@
                     "type": "",
                     "notes": [
                         {
-                            "note": ""
-                        }
+                            "note": "Veracode only scans T-SQL files with the SQL extension."
+                        },
+                        {
+                            "note": "Veracode Static Analysis does not Analyze general SQL scripts or queries or Support middleware libraries or RAD tool libraries."
+                        },
+                        {
+                            "note": "Do not include third-party packages."
+                        }                                                
                     ]
                 } 
             ]
@@ -30,9 +36,9 @@
     ],
     "compilation" : [
         {
-            "basic" : "Kotlin applications often interoperate with Java components. Compile application to emit debug symbols.",
-            "code" : "kotlinc hello.kt -g -d hello.jar",
-            "notes" : [""]
+            "basic" : "",
+            "code" : "",
+            "notes" : []
        }
     ],
     "reference" : [
@@ -40,8 +46,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "Kotlin Packaging Guide",
-                    "url": "https://docs.veracode.com/r/c_compilation_kotlin"
+                    "name": "",
+                    "url": ""
                 }
             ]
         },

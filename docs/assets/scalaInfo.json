@@ -1,9 +1,9 @@
 {
     "packaging" : [
         {
-            "basic" : "",
+            "basic" : "Submit Scala applications as JAR files without any third-party dependencies within the application code.",
             "sca": [
-                "Not Supported."
+                "Include dependency JARs in upload."
             ],
             "format" : [
                 {
@@ -30,8 +30,8 @@
     ],
     "compilation" : [
         {
-            "basic" : "",
-            "code" : "",
+            "basic" : "You must compile and submit Scala applications as JAR files without any third-party dependencies within the application code. Submit debug symbols for as much of the application as possible.",
+            "code" : "scalac -g:vars foo.scala",
             "notes" : []
        }
     ],
@@ -40,8 +40,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "",
-                    "url": ""
+                    "name": "Scala Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_scala"
                 }
             ]
         },

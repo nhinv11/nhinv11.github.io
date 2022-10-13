@@ -1,7 +1,7 @@
 {
     "packaging" : [
         {
-            "basic" : "",
+            "basic" : "Veracode requires a ZIP archive of all RPG source code files.",
             "sca": [
                 "Not Supported."
             ],
@@ -21,7 +21,16 @@
                     "type": "",
                     "notes": [
                         {
-                            "note": ""
+                            "note": "Source code files to be UTF-8 encoded."
+                        },
+                        {
+                            "note": "Windows and Linux systems keep source code in files. However, many RPG systems keep source code in a database or libraries. To transfer source code to Veracode for scanning, you must first extract the RPG source code from the database on a host system into source files that Veracode can scan."
+                        },
+                        {
+                            "note": "You must extract each program into its own source file."
+                        },
+                        {
+                            "note": "If you have system administration privileges, you can extract the code from the host system using tools such as IBM iAccess, iSeries Navigator, CPYTOIMPF, or CPYTOSTMF."
                         }
                     ]
                 } 
@@ -40,8 +49,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "",
-                    "url": ""
+                    "name": "RPG Packaging Guide",
+                    "url": "https://docs.veracode.com/r/compilation_rpg"
                 }
             ]
         },

@@ -1,9 +1,9 @@
 {
     "packaging" : [
         {
-            "basic" : "You must submit Kotlin applications as JAR or WAR files.",
+            "basic" : "Upload a compressed ZIP archive to the Veracode Platform containing all Visual Basic 6 source code and required dependencies.",
             "sca": [
-                "Include dependency JARs as part of your upload."
+                "Not Supported."
             ],
             "format" : [
                 {
@@ -21,7 +21,7 @@
                     "type": "",
                     "notes": [
                         {
-                            "note": ""
+                            "note": "Do not attempt to upload individual Visual Basic 6 files."
                         }
                     ]
                 } 
@@ -30,9 +30,9 @@
     ],
     "compilation" : [
         {
-            "basic" : "Kotlin applications often interoperate with Java components. Compile application to emit debug symbols.",
-            "code" : "kotlinc hello.kt -g -d hello.jar",
-            "notes" : [""]
+            "basic" : "Veracode does not support binary analysis for Visual Basic 6 applications. You must upload your Visual Basic 6 source files to Veracode for analysis.",
+            "code" : "",
+            "notes" : []
        }
     ],
     "reference" : [
@@ -40,8 +40,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "Kotlin Packaging Guide",
-                    "url": "https://docs.veracode.com/r/c_compilation_kotlin"
+                    "name": "Visual Basic 6",
+                    "url": "https://docs.veracode.com/r/compilation_vb6"
                 }
             ]
         },

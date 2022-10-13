@@ -64,8 +64,23 @@
             "extensions": "ASP, CLS, CMP, COMPONENT, EVT, PAGE, TGR, TRIGGER, VFP"
         },
         { 
+            "name": "C++",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+            "variants": [
+                {
+                    "variant": "",
+                    "versions": [""],
+                    "extensions": ""
+                }
+            ],
+            "platforms": ["Windows, Linux"],
+            "versions": [""],
+            "compilers": [""],
+            "extensions": ""
+        },
+        { 
             "name": "Classic ASP",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-classicasp-plain",
+            "image": "/assets/images/classic_asp.png",
             "variants": [
                 {
                     "variant": "",
@@ -80,7 +95,7 @@
         },
         { 
             "name": "COBOL",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-cobol-plain",
+            "image": "/assets/images/Cobol.png",
             "variants": [
                 {
                     "variant": "Enterprise COBOL for z/OS",
@@ -160,7 +175,7 @@
         },
         { 
             "name": "ColdFusion",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-coldfusion-plain",
+            "image": "/assets/images/ColdFusion.png",
             "variants": [
                 {
                     "variant": "",
@@ -319,7 +334,7 @@
         },          
         { 
             "name": "RPG",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-rpg-plain",
+            "image": "/assets/images/IBM_RPG_logo.png",
             "variants": [
                 {
                     "variant": "",
@@ -330,7 +345,7 @@
             "platforms": ["BM iSeries, pSeries"],
             "versions": ["RPG III, RPG IV, RPGLE"],
             "compilers": [""],
-            "extensions": "PF, LF, DSPF, PRTF, ICF"
+            "extensions": "RPG, RPG4, RPGLE"
         },          
         { 
             "name": "Ruby",
@@ -360,11 +375,11 @@
             "platforms": ["JVM 1.6–1.9, 10"],
             "versions": ["2.13 and earlier"],
             "compilers": ["scalac 2.13 and earlier","javac 1.6–1.8"],
-            "extensions": "PF, LF, DSPF, PRTF, ICF"
+            "extensions": "SCALA"
         },          
         { 
             "name": "SQL",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-sql-plain",
+            "image": "/assets/images/sql_logo.png",
             "variants": [
                 {
                     "variant": "PL/SQL",
@@ -383,8 +398,8 @@
             "extensions": ""
         },          
         { 
-            "name": "VB 6",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon-vb6-plain",
+            "name": "Visual Basic 6",
+            "image": "/assets/images/Visual_Basic_6.0_logo.png",
             "variants": [
                 {
                     "variant": "",
