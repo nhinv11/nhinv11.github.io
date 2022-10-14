@@ -34,8 +34,7 @@
         {
             "basic" : "Ensure that you compile the binary files with debug settings",
             "code" : "cl.exe /Zi /Od /GS- /MTd /link /INCREMENTAL:NO /DEBUG:FULL",
-            "notes" : [
-                "Dwarf debug symbols are mandatory for main executables. Failure to upload debug symbols for Solaris or Linux C/C++ applications prevents the scan from proceeding."
+            "notes" : ["Set Debug Information Format to Program Database using the /Zi option.","When possible, set Optimization to Disabled using the/Od option.","Set Basic Runtime Checks to Default. On the command line, ensure that /RTC is not set.","Set Runtime Library to Multi-threaded Debug or Multi-threaded Debug DLL using the /MTd, /MDd, or /LDd options.","Set Buffer Security Check to No using the /GS- option.","Set Enable Incremental Linking to No using the /INCREMENTAL:NO options.","Choose Generate Debug Information optimized for sharing and publishing using the /DEBUG:FULL option."
             ]
        }
     ],

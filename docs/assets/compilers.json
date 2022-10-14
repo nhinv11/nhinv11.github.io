@@ -1,0 +1,246 @@
+{
+    "languages": [
+        { 
+            "name": "CppLinux",
+            "compilers": [
+                {
+                    "platform": "CentOS x64",
+                    "versions": [
+                            {
+                                "platform_version": "8",
+                                "compiler_version": [
+                                                        "GCC 11.2",
+                                                        "GCC 10.2",
+                                                        "GCC 9.2",
+                                                        "GCC 8.3"
+                                ]
+                            },
+                            {
+                                "platform_version": "7",
+                                "compiler_version": [
+                                                        "GCC 8.3",
+                                                        "GCC 7.3", 
+                                                        "GCC 6.3",
+                                                        "GCC 5.3",
+                                                        "GCC 4.9",
+                                                        "GCC 4.8"
+                                ]
+                            },
+                            {
+                                "platform_version": "6",
+                                "compiler_version": [
+                                                        "GCC 7.3",
+                                                        "GCC 6.3",
+                                                        "GCC 5.3",
+                                                        "GCC 4.9",
+                                                        "GCC 4.8",
+                                                        "GCC 4.4"
+                                ]
+                            },
+                            {
+                                "platform_version": "5",
+                                "compiler_version": [
+                                                        "GCC 4.9",
+                                                        "GCC 4.8",
+                                                        "GCC 4.7",
+                                                        "GCC 4.1"
+                                ]
+                            }
+                    ]
+                },
+                {
+                    "platform": "Red Hat Enterprise Linux x64",
+                    "versions": [
+                            {
+                                "platform_version": "8",
+                                "compiler_version": [
+                                                        "GCC 11.2",
+                                                        "GCC 10.2",
+                                                        "GCC 9.2",
+                                                        "GCC 8.3"
+                                ]
+                            },
+                            {
+                                "platform_version": "7",
+                                "compiler_version": [
+                                                        "GCC 8.3",
+                                                        "GCC 7.3",
+                                                        "GCC 6.3",
+                                                        "GCC 5.3",
+                                                        "GCC 4.9",
+                                                        "GCC 4.8"
+                                ]
+                            },
+                            {
+                                "platform_version": "6",
+                                "compiler_version": [
+                                                        "GCC 7.3",
+                                                        "GCC 6.3",
+                                                        "GCC 5.3",
+                                                        "GCC 4.9", 
+                                                        "GCC 4.8",
+                                                        "GCC 4.4"
+                                ]
+                            },
+                            {
+                                "platform_version": "5",
+                                "compiler_version": [
+                                                        "GCC 4.9",
+                                                        "GCC 4.8",
+                                                        "GCC 4.7",
+                                                        "GCC 4.1"
+                                ]
+                            }
+                    ]
+                },
+                {
+                    "platform": "CentOS x86",
+                    "versions": [
+                            {
+                                "platform_version": "5",
+                                "compiler_version": [
+                                                        "GCC 4.9",
+                                                        "GCC 4.8",
+                                                        "GCC 4.2",
+                                                        "GCC 4.1"
+                                ]
+                            },
+                            {
+                                "platform_version": "4",
+                                "compiler_version": [
+                                                        "GCC 4.2",
+                                                        "GCC 4.1",
+                                                        "GCC 4.0",
+                                                        "GCC 3.4",
+                                                        "GCC 3.3"
+                                ]
+                            },
+                            {
+                                "platform_version": "3",
+                                "compiler_version": ["GCC 3.2"]
+                            }
+                    ]
+                },
+                {
+                    "platform": "Red Hat Enterprise Linux x86",
+                    "versions": [
+                        {
+                            "platform_version": "5",
+                            "compiler_version": [
+                                                    "GCC 4.9",
+                                                    "GCC 4.8",
+                                                    "GCC 4.2",
+                                                    "GCC 4.1"
+                            ]
+                        },
+                        {
+                            "platform_version": "4",
+                            "compiler_version": [
+                                                    "GCC 4.2", 
+                                                    "GCC 4.1",
+                                                    "GCC 4.0",
+                                                    "GCC 3.4",
+                                                    "GCC 3.3"
+                            ]
+                        },
+                        {
+                            "platform_version": "3",
+                            "compiler_version": ["GCC 3.2"]
+                        }
+                    ]
+                },
+                {
+                    "platform": "openSUSE x86",
+                    "versions": [
+                        {
+                            "platform_version": "10",
+                            "compiler_version": [
+                                                    "GCC 4.1",
+                                                    "GCC 4.5",
+                                                    "GCC 4.8",
+                                                    "GCC 4.9"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "platform": "openSUSE x64",
+                    "versions": [
+                        {
+                            "platform_version": "11",
+                            "compiler_version": [
+                                                    "GCC 4.9",
+                                                    "GCC 4.8",
+                                                    "GCC 4.5"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "platform": "openSUSE x86",
+                    "versions": [
+                        {
+                            "platform_version": "11",
+                            "compiler_version": [
+                                                    "GCC 4.9",
+                                                    "GCC 4.8",
+                                                    "GCC 4.5"
+                            ]
+                        }
+                    ]
+                }                  
+            ]
+        },
+        { 
+            "name": "CppWindows",
+            "compilers": [
+                {
+                    "platform": "Windows",
+                    "architecture": "",
+                    "versions": [
+                            {
+                                "platform_version": "Visual Studio .NET 2002",
+                                "compiler_version": ["Visual C++ 7.0 "]
+                            },
+                            {
+                                "platform_version": "Visual Studio .NET 2003",
+                                "compiler_version": ["Visual C++ 7.1"]
+                            },
+                            {
+                                "platform_version": "Visual Studio 2005",
+                                "compiler_version": ["Visual C++ 8.0"]
+                            },
+                            {
+                                "platform_version": "Visual Studio 2008",
+                                "compiler_version": ["Visual C++ 9.0"]
+                            },
+                            {
+                                "platform_version": "Visual Studio 2010",
+                                "compiler_version": ["Visual C++ 10.0"]
+                            },
+                            {
+                                "platform_version": "Visual Studio 2012",
+                                "compiler_version": ["Visual C++ 11.0"]
+                            },
+                            {
+                                "platform_version": "Visual Studio 2013",
+                                "compiler_version": ["Visual C++ 12.0"]
+                            },
+                            {
+                                "platform_version": "Visual Studio 2015",
+                                "compiler_version": ["Visual C++ 14.0"]
+                            },
+                            {
+                                "platform_version": "Visual Studio 2017",
+                                "compiler_version": ["Visual C++ 14.1.x"]
+                            },
+                            {
+                                "platform_version": "Visual Studio 2019",
+                                "compiler_version": ["Visual C++ 14.2.x"]
+                            }
+                    ]
+                }
+            ]
+        }
+    ]        
+}
