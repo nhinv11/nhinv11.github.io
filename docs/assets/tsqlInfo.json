@@ -46,8 +46,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "",
-                    "url": ""
+                    "name": "Transact-SQL Packaging Guidance",
+                    "url": "https://docs.veracode.com/r/Packaging_Transact_SQL_Applications"
                 }
             ]
         },
