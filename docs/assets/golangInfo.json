@@ -31,7 +31,10 @@
                     ],
                     "notes": [
                         {
-                            "note": ""  
+                            "note": "Make sure to run go mod vendor to provide all relevant dependencies."  
+                        },
+                        {
+                            "note": "*Applications with usage or dependency on CGO is not supported and will cause prescan module errors."
                         }
                     ]
                 }                                           

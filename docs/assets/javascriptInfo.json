@@ -8,7 +8,7 @@
                     "structure": [],
                     "notes": [
                         {
-                            "note": "Do not run npm install and include node modules." 
+                            "note": "Do not run npm install or include node modules." 
                         }
                     ]
                 }                                           
@@ -35,6 +35,10 @@
                 {
                     "name": "JavaScript Packaging Guide",
                     "url": "https://docs.veracode.com/r/compilation_jscript"
+                },
+                {
+                    "name": "JavaScript Packaging Tool",
+                    "url": "https://github.com/fw10/veracode-node-packager"
                 }
             ]
         },
