@@ -29,10 +29,9 @@
     ],
     "compilation" : [
         {
-            "basic" : "Ensure that you compile the binary files with debug settings",
+            "basic" : "Ensure that you compile the binary files with debug settings. Do not compile code with any of these options:",
             "code" : "-gdwarf-2 -g3 -O0 -fno-builtin",
             "notes" : [
-                "Do not compile code with any of these options: ",
                 "-O ",
                 "-mflat ",
                 "-mno-faster-structs ",

@@ -79,7 +79,8 @@
         {
             "basic" : "Veracode can analyze Android application code with or without debug symbols. When you provide debug builds of Android application code, Veracode can provide source file and line number information about the location of findings.",
             "code" : "javac -g foo.java",
-            "notes" : []
+            "crossplatform": "When you build applications with Xamarin, you must compile the project in debug mode. When you create a cross-platform application, package the target Android platform.",
+            "notes" : [""]
        }
     ],
     "reference" : [
@@ -88,7 +89,7 @@
             "resource": [
                 {
                     "name": "Android Compilation/Packaging Guide",
-                    "url": "https://docs.veracode.com/r/compilation_Android"
+                    "url": "https://docs.veracode.com/r/compilation_android"
                 }
             ]
         },

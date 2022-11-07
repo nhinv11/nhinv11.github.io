@@ -203,14 +203,14 @@
                 {
                     "name": "Appcelerator Titanium",
                     "versions": "1.0 and later",
-                    "packaging": "",
+                    "packaging": "If you build your application using an older version of Titanium that supports Rhino compilation, disable JS compilation before building the APK. To disable JS compilation, set the ti.android.compilejs property to false in the tiapp.xml file.",
                     "notes": ""
                 },
                 {
                     "name": "Apache Cordova/Adobe PhoneGap",
                     "versions": "1.0 and later",
-                    "packaging": "Veracode strongly recommends that you submit applications that have not been processed with a JavaScript minifier or obfuscation tool. Minified JavaScript can increase the difficulty in reviewing flaw results because line-number information can become obscured.",
-                    "notes": "Veracode requires your Adobe PhoneGap/Apache Cordova application to be a compiled Android package (APK)"
+                    "packaging": "While APK is accepted, we recommend uploading a compressed ZIP archive containing all JavaScript source code instead. Veracode strongly recommends that you submit applications that have not been processed with a JavaScript minifier or obfuscation tool. Minified JavaScript can increase the difficulty in reviewing flaw results because line-number information can become obscured.",
+                    "notes": "Veracode requires your Adobe PhoneGap/Apache Cordova application to be a compiled Android package (APK) or as a ZIP archive of source code."
                 },                
                 {
                     "name": "AWS Mobile SDK for Android",
@@ -223,11 +223,35 @@
                     "versions": "2.4",
                     "packaging": "",
                     "notes": ""
+                },                
+                {
+                    "name": "Ionic",
+                    "versions": "3.x–4.0",
+                    "packaging": "Upload a compressed ZIP archive containing all Ionic source code to Veracode. Do not submit files that you built using webpack or other packaging mechanisms. Ensure your source files are UTF-8 encoded.",
+                    "notes": ""
                 }, 
                 {
                     "name": "Parse Android SDK",
                     "versions": "1.9.4",
                     "packaging": "",
+                    "notes": ""
+                }, 
+                {
+                    "name": "React Native",
+                    "versions": "0.50–0.6x",
+                    "packaging": "While APK is accepted, we recommend uploading a compressed ZIP archive containing all JavaScript source code instead. Do not submit files that you built using webpack or other packaging mechanisms. Source files must be UTF-8 encoded.",
+                    "notes": ""
+                },
+                {
+                    "name": "Xamarin.Android",
+                    "versions": "12.1 and earlier",
+                    "packaging": "After you build the project using the debug configuration, the build creates a subdirectory called bin/Debug. This subdirectory contains the output DLL, PDB, and MDB files. Upload these files individually or package them in a ZIP file.",
+                    "notes": ""
+                }, 
+                {
+                    "name": "Xamarin.Forms",
+                    "versions": "5.0 and earlier",
+                    "packaging": "When you build applications with Xamarin, you must compile the project in debug mode. When you create a cross-platform application, provide the Android target platform output for upload. This subdirectory contains the output DLL, PDB, and MDB files. Upload these files individually or package them in a ZIP file.",
                     "notes": ""
                 }           
             ]   
@@ -644,23 +668,35 @@
             "name": "iOS",
             "frameworks": [
                 {
-                    "name": "iOS",
-                    "versions": "11-16",
-                    "packaging": "",
+                    "name": "Apache Cordova/Adobe PhoneGap",
+                    "versions": "1.0 and later",
+                    "packaging": "While IPA is accepted, we recommend uploading a compressed ZIP archive containing all JavaScript source code instead. Veracode strongly recommends that you submit applications that have not been processed with a JavaScript minifier or obfuscation tool. Minified JavaScript can increase the difficulty in reviewing flaw results because line-number information can become obscured.",
                     "notes": ""
                 },
                 {
-                    "name": "tvOS",
-                    "versions": "14-15",
-                    "packaging": "",
+                    "name": "Ionic",
+                    "versions": "3.x–4.0",
+                    "packaging": "Upload a compressed ZIP archive containing all Ionic source code to Veracode. Do not submit files that you built using webpack or other packaging mechanisms. Ensure your source files are UTF-8 encoded.",
                     "notes": ""
                 },
                 {
-                    "name": "wearOS",
-                    "versions": "6-8",
-                    "packaging": "",
+                    "name": "React Native",
+                    "versions": "0.50–0.6x",
+                    "packaging": "While IPA is accepted, we recommend uploading a compressed ZIP archive containing all JavaScript source code instead. Do not submit files that you built using webpack or other packaging mechanisms. Source files must be UTF-8 encoded.",
                     "notes": ""
-                }
+                },
+                {
+                    "name": "Xamarin.Forms",
+                    "versions": "5.0 and earlier",
+                    "packaging": "When you build applications with Xamarin, you must compile the project in debug mode. When you create a cross-platform application, provide the iOS target platform output for upload. This subdirectory contains the output DLL, PDB, and MDB files. Upload these files individually or package them in a ZIP file.",
+                    "notes": ""
+                },
+                {
+                    "name": "Xamarin.iOS",
+                    "versions": "15.4 and earlier",
+                    "packaging": "When you build a Xamarin iOS project, it targets a specific simulator. After you build the project using the debug configuration targeting a specific device, for example, iPhone, you can find the output in bin/iPhoneSimulator/Debug. In this example, the output consists of a single EXE and possibly multiple DLL, PDB, and MDB files. Upload these files excluding subdirectories individually, or package them in a ZIP file.",
+                    "notes": ""
+                }               
             ]   
         },
         {
