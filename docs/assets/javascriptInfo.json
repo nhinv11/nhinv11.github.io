@@ -15,9 +15,9 @@
             ],
             "special" : [],
             "sca" : [
-                "For Bower, include package.json and bower.lock file.", 
-                "For NPM, include package.json and package-lock.json file.",
-                "For Yarn, include package.json and yarn.lock file."
+                "For Bower, include package.json and bower.lock in the root of your ZIP archive.", 
+                "For NPM, include package.json and package-lock.json in the root of your ZIP archive.",
+                "For Yarn, include package.json and yarn.lock in the root of your ZIP archive."
             ]
         }
     ],
