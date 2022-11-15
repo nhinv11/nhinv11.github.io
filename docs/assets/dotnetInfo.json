@@ -69,7 +69,7 @@
     "compilation" : [
         {
             "basic" : "Build with DEBUG configuration",
-            "code" : "dotnet publish -c Debug -p:PublishProfile=FolderProfile",
+            "code" : "dotnet publish -c Debug -p:PublishProfile=FolderProfile -p:UseAppHost=false -p:SatelliteResourceLanguages='en'",
             "notes" : ["Veracode does not support static analysis of Self-Contained Deployment (SCD) .NET Core applications."]
        }
     ],
