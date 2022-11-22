@@ -2,7 +2,7 @@
     "languages": [
         {
             "name": ".NET",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
+            "image": "/assets/images/windows-color.svg",
             "variants": [
             { 
                 "variant": "C#, VB.NET",
@@ -34,7 +34,7 @@
         { 
             "name": "Android",
             "altname": "Android",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg",
             "variants": [
                 {
                     "variant": "",
@@ -50,7 +50,7 @@
         { 
             "name": "Apex",
             "altname": "Apex",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-plain.svg",
             "variants": [
                 {
                     "variant": "",
@@ -65,7 +65,7 @@
         },
         { 
             "name": "C++",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg",
             "variants": [
                 {
                     "variant": "",
@@ -80,7 +80,7 @@
         },
         { 
             "name": "Classic ASP",
-            "image": "/assets/images/classic_asp.png",
+            "image": "/assets/images/windows-color.svg",
             "variants": [
                 {
                     "variant": "",
@@ -95,7 +95,7 @@
         },
         { 
             "name": "COBOL",
-            "image": "/assets/images/Cobol.png",
+            "image": "/assets/images/cobol-color.svg",
             "variants": [
                 {
                     "variant": "Enterprise COBOL for z/OS",
@@ -175,7 +175,7 @@
         },
         { 
             "name": "ColdFusion",
-            "image": "/assets/images/ColdFusion.png",
+            "image": "/assets/images/adobe-color.svg",
             "variants": [
                 {
                     "variant": "",
@@ -220,7 +220,7 @@
         },
         { 
             "name": "Java",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg",
             "variants": [
                 {
                     "variant": "",
@@ -244,7 +244,7 @@
         },
         { 
             "name": "JavaScript / TypeScript",
-            "image": "/assets/images/ts-js.png",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
             "variants": [
                 {
                     "variant": "",
@@ -259,7 +259,7 @@
         },
         { 
             "name": "Kotlin",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-plain.svg",
             "variants": [
                 {
                     "variant": "",
@@ -289,7 +289,7 @@
         },
         { 
             "name": "PHP",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
             "variants": [
                 {
                     "variant": "",
@@ -319,7 +319,7 @@
         },          
         { 
             "name": "Python",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg",
             "variants": [
                 {
                     "variant": "",
@@ -334,7 +334,7 @@
         },          
         { 
             "name": "RPG",
-            "image": "/assets/images/IBM_RPG_logo.png",
+            "image": "/assets/images/rpg-color.svg",
             "variants": [
                 {
                     "variant": "",
@@ -349,7 +349,7 @@
         },          
         { 
             "name": "Ruby",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain.svg",
             "variants": [
                 {
                     "variant": "",
@@ -364,7 +364,7 @@
         },          
         { 
             "name": "Scala",
-            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-plain.svg",
             "variants": [
                 {
                     "variant": "",
@@ -379,7 +379,7 @@
         },          
         { 
             "name": "SQL",
-            "image": "/assets/images/sql_logo.png",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg",
             "variants": [
                 {
                     "variant": "PL/SQL",
@@ -399,7 +399,7 @@
         },          
         { 
             "name": "Visual Basic 6",
-            "image": "/assets/images/Visual_Basic_6.0_logo.png",
+            "image": "/assets/images/windows-color.svg",
             "variants": [
                 {
                     "variant": "",
