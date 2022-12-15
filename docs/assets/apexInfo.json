@@ -40,8 +40,8 @@
             "type" : "links",
             "resource": [
                 {
-                    "name": "",
-                    "url": ""
+                    "name": "Apex Packaging Guide",
+                    "url": "https://docs.veracode.com/r/c_compilation_apex"
                 }
             ]
         },

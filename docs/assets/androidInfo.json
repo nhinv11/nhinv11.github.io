@@ -1,7 +1,7 @@
 {
     "packaging" : [
         {
-            "basic" : "Veracode supports scanning Android applications written in Java and Kotlin and packaged as an Android Package (APK) or Android App Bundle (AAB)",
+            "basic" : "Veracode supports scanning Android applications written in Dart, Java and Kotlin and packaged as an Android Package (APK) or Android App Bundle (AAB)",
             "sca": [
                 "Not Supported."
             ],
@@ -79,7 +79,12 @@
         {
             "basic" : "Veracode can analyze Android application code with or without debug symbols. When you provide debug builds of Android application code, Veracode can provide source file and line number information about the location of findings.",
             "code" : "javac -g foo.java",
+            "code_flutter_aab": "flutter build aab --debug",
+            "code_flutter_apk": "flutter build apk --debug",
+            "maui_basic": "You can use the .NET CLI to compile a .NET MAUI application by running the following command.",
+            "maui_code": "dotnet build -c Debug",
             "crossplatform": "When you build applications with Xamarin, you must compile the project in debug mode. When you create a cross-platform application, package the target Android platform.",
+            "notes_flutter": "Veracode requires a debug build of your Flutter application. You can use the Flutter CLI tool to build your application:",
             "notes" : [""]
        }
     ],

@@ -88,6 +88,12 @@
                     "notes": ""
                 },
                 {
+                    "name": "MAUI (Multi-platform App UI)",
+                    "versions": "",
+                    "packaging": "",
+                    "notes": "Right now we don't support .NET MAUI apps that are targetting Windows 10 and/or 11 written using WinUI 3. There is support for Android, iOS, and macOS."
+                },
+                {
                     "name": "Microsoft Enterprise Library",
                     "versions": "",
                     "packaging": "",
@@ -204,54 +210,77 @@
                     "name": "Appcelerator Titanium",
                     "versions": "1.0 and later",
                     "packaging": "If you build your application using an older version of Titanium that supports Rhino compilation, disable JS compilation before building the APK. To disable JS compilation, set the ti.android.compilejs property to false in the tiapp.xml file.",
+                    "sca": "Dependencies are included by default, but if you have opted out of sharing dependencies, you must opt back in by removing the dependenciesInfo section from the build.gradle file so that SCA may include dependencies in the scan result.",
                     "notes": ""
                 },
                 {
                     "name": "Apache Cordova/Adobe PhoneGap",
                     "versions": "1.0 and later",
                     "packaging": "While APK is accepted, we recommend uploading a compressed ZIP archive containing all JavaScript source code instead. Veracode strongly recommends that you submit applications that have not been processed with a JavaScript minifier or obfuscation tool. Minified JavaScript can increase the difficulty in reviewing flaw results because line-number information can become obscured.",
+                    "sca": "Dependencies are included by default, but if you have opted out of sharing dependencies, you must opt back in by removing the dependenciesInfo section from the build.gradle file so that SCA may include dependencies in the scan result.",
                     "notes": "Veracode requires your Adobe PhoneGap/Apache Cordova application to be a compiled Android package (APK) or as a ZIP archive of source code."
                 },                
                 {
                     "name": "AWS Mobile SDK for Android",
                     "versions": "2.2.4",
                     "packaging": "",
+                    "sca": "Dependencies are included by default, but if you have opted out of sharing dependencies, you must opt back in by removing the dependenciesInfo section from the build.gradle file so that SCA may include dependencies in the scan result.",
                     "notes": ""
                 },
                 {
                     "name": "ExoPlayer",
                     "versions": "2.4",
                     "packaging": "",
+                    "sca": "Dependencies are included by default, but if you have opted out of sharing dependencies, you must opt back in by removing the dependenciesInfo section from the build.gradle file so that SCA may include dependencies in the scan result.",
                     "notes": ""
-                },                
+                },
+                {
+                    "name": "Flutter",
+                    "versions": "3.0",
+                    "packaging": "",
+                    "sca": "Not Supported.",
+                    "notes": ""
+                },                  
                 {
                     "name": "Ionic",
                     "versions": "3.x–4.0",
                     "packaging": "Upload a compressed ZIP archive containing all Ionic source code to Veracode. Do not submit files that you built using webpack or other packaging mechanisms. Ensure your source files are UTF-8 encoded.",
+                    "sca": "Include dependency JARs in upload.",
+                    "notes": ""
+                },
+                {
+                    "name": "MAUI (Multi-platform App UI)",
+                    "versions": "Android 5.0 (API 21) or higher",
+                    "packaging": "After you build the project using the debug configuration, the build creates a subdirectory called bin/Debug. Inside of this directory there is a subfolder for the Android platform. Create a ZIP file for the directory, bin/Debug/net6.0-android/ , and upload to the Veracode platform.",
+                    "sca": "Include dependency DLLs in upload.",
                     "notes": ""
                 }, 
                 {
                     "name": "Parse Android SDK",
                     "versions": "1.9.4",
                     "packaging": "",
+                    "sca": "Dependencies are included by default, but if you have opted out of sharing dependencies, you must opt back in by removing the dependenciesInfo section from the build.gradle file so that SCA may include dependencies in the scan result.",
                     "notes": ""
                 }, 
                 {
                     "name": "React Native",
-                    "versions": "0.50–0.6x",
+                    "versions": "0.50–0.67",
                     "packaging": "While APK is accepted, we recommend uploading a compressed ZIP archive containing all JavaScript source code instead. Do not submit files that you built using webpack or other packaging mechanisms. Source files must be UTF-8 encoded.",
+                    "sca": "Dependencies are included by default, but if you have opted out of sharing dependencies, you must opt back in by removing the dependenciesInfo section from the build.gradle file so that SCA may include dependencies in the scan result.",
                     "notes": ""
                 },
                 {
                     "name": "Xamarin.Android",
                     "versions": "12.1 and earlier",
                     "packaging": "After you build the project using the debug configuration, the build creates a subdirectory called bin/Debug. This subdirectory contains the output DLL, PDB, and MDB files. Upload these files individually or package them in a ZIP file.",
+                    "sca": "Include dependency DLLs in upload.",
                     "notes": ""
                 }, 
                 {
                     "name": "Xamarin.Forms",
                     "versions": "5.0 and earlier",
                     "packaging": "When you build applications with Xamarin, you must compile the project in debug mode. When you create a cross-platform application, provide the Android target platform output for upload. This subdirectory contains the output DLL, PDB, and MDB files. Upload these files individually or package them in a ZIP file.",
+                    "sca": "Include dependency DLLs in upload.",
                     "notes": ""
                 }           
             ]   
@@ -307,6 +336,16 @@
                 {
                     "name": "",
                     "versions": "",
+                    "packaging": "",
+                    "notes": ""
+                }
+            ]   
+        },        {
+            "name": "Dart",
+            "frameworks": [
+                {
+                    "name": "Flutter",
+                    "versions": "3.0",
                     "packaging": "",
                     "notes": ""
                 }
@@ -634,7 +673,7 @@
                 },
                 {
                     "name": "Node.js",
-                    "versions": "16.x and earlier",
+                    "versions": "18.x and earlier",
                     "packaging": "",
                     "notes": ""
                 },
@@ -671,30 +710,49 @@
                     "name": "Apache Cordova/Adobe PhoneGap",
                     "versions": "1.0 and later",
                     "packaging": "While IPA is accepted, we recommend uploading a compressed ZIP archive containing all JavaScript source code instead. Veracode strongly recommends that you submit applications that have not been processed with a JavaScript minifier or obfuscation tool. Minified JavaScript can increase the difficulty in reviewing flaw results because line-number information can become obscured.",
+                    "sca": "Include package-lock.json in your ZIP archive for submission.",
                     "notes": ""
                 },
+                {
+                    "name": "Flutter",
+                    "versions": "3.0",
+                    "packaging": "Your built iOS Archive can be found in the `build/ios/ipa` folder and can be submitted to Veracode for scanning.",
+                    "sca": "Include Podfile.lock in your root of your ZIP archive for submission.",
+                    "notes": ""
+                }, 
                 {
                     "name": "Ionic",
                     "versions": "3.x–4.0",
                     "packaging": "Upload a compressed ZIP archive containing all Ionic source code to Veracode. Do not submit files that you built using webpack or other packaging mechanisms. Ensure your source files are UTF-8 encoded.",
+                    "sca": "Include package-lock.json in your ZIP archive for submission.",
                     "notes": ""
                 },
                 {
+                    "name": "MAUI (Multi-platform App UI)",
+                    "versions": "iOS 11 or higher, using the latest release of Xcode",
+                    "packaging": "After you build the project using the debug configuration, the build creates a subdirectory called bin/Debug. Inside of this directory there is a subfolder for the iOS platform. Create a ZIP file for the directory, bin/Debug/net6.0-ios/iossimulator-%/ , and upload to the Veracode platform.",
+                    "sca": "Include dependency DLLs in upload.",
+                    "notes": ""
+                }, 
+                {
                     "name": "React Native",
-                    "versions": "0.50–0.6x",
+                    "versions": "0.50–0.67",
                     "packaging": "While IPA is accepted, we recommend uploading a compressed ZIP archive containing all JavaScript source code instead. Do not submit files that you built using webpack or other packaging mechanisms. Source files must be UTF-8 encoded.",
+                    "sca": "Include package-lock.json in your ZIP archive for submission.",
                     "notes": ""
                 },
                 {
                     "name": "Xamarin.Forms",
                     "versions": "5.0 and earlier",
                     "packaging": "When you build applications with Xamarin, you must compile the project in debug mode. When you create a cross-platform application, provide the iOS target platform output for upload. This subdirectory contains the output DLL, PDB, and MDB files. Upload these files individually or package them in a ZIP file.",
+                    "sca": "Include dependency DLLs in upload.",
                     "notes": ""
                 },
                 {
                     "name": "Xamarin.iOS",
                     "versions": "15.4 and earlier",
                     "packaging": "When you build a Xamarin iOS project, it targets a specific simulator. After you build the project using the debug configuration targeting a specific device, for example, iPhone, you can find the output in bin/iPhoneSimulator/Debug. In this example, the output consists of a single EXE and possibly multiple DLL, PDB, and MDB files. Upload these files excluding subdirectories individually, or package them in a ZIP file.",
+                    "sca": "Include dependency DLLs in upload.",
                     "notes": ""
                 }               
             ]   
@@ -704,7 +762,7 @@
             "frameworks": [
                 {
                     "name": "Laravel",
-                    "versions": "5.x",
+                    "versions": "5-9",
                     "packaging": "",
                     "notes": ""
                 },
@@ -764,7 +822,7 @@
                 },
                 {
                     "name": "Flask",
-                    "versions": "0.x, 1.x",
+                    "versions": "0.x, 1.x, 2.x",
                     "packaging": "",
                     "notes": ""
                 },

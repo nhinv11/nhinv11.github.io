@@ -1,0 +1,38 @@
+[
+  {
+    "release": "2022.12",
+    "date": "2022-12-15",
+    "changes": [
+      {
+        "notes": ".NET MAUI Support"
+      },
+      {
+        "notes": "Android 13 Initial Support"
+      },
+      {
+        "notes": "Dart & Flutter Support"
+      },
+      {
+        "notes": "Go 1.18 and 1.19 Support"
+      },
+      {
+        "notes": "Kotlin v1.7 Initial Support"
+      },
+      {
+        "notes": "New iOS application packaging to support Xcode 14 without the Enable_Bitcode setting"
+      },
+      {
+        "notes": "Node.js v18 Support"
+      },
+      {
+        "notes": "PHP Laravel v6-9 Support"
+      },
+      {
+        "notes": "Python Flask 2.x Support"
+      },
+      {
+        "notes": "React Native v0.67 Support "
+      }
+    ]
+  }
+]

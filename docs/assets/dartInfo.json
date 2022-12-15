@@ -1,0 +1,89 @@
+{
+    "packaging" : [
+        {
+            "basic" : "Upload a ZIP archive containing all the source code.",
+            "sca": [
+                "Not Supported."
+            ],
+            "format" : [
+                {
+                    "type" : "AAB",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "Your built Android App Bundle can be found in the `build/app/outputs/bundle/debug/` folder and can be submitted to Veracode for scanning."  
+                        }
+                    ]
+                },
+                {
+                    "type" : "APK",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "Your built Android Package can be found in the `build/app/outputs/flutter-apk` folder and can be submitted to Veracode for scanning."  
+                        }
+                    ]
+                },
+                {
+                    "type" : "iOS",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "Your built iOS Archive can be found in the `build/ios/ipa` folder and can be submitted to Veracode for scanning."  
+                        }
+                    ]
+                }                                               
+            ],
+            "special" : [
+                {
+                    "type": "",
+                    "notes": [
+                        {
+                            "note": ""
+                        }
+                    ]
+                } 
+            ]
+        }
+    ],
+    "compilation" : [
+        {
+            "basic" : "Veracode requires a debug build of your Flutter application. You can use the Flutter CLI tool to build your application:",
+            "code" : "",
+            "code_flutter_aab" : "flutter build appbundle --debug",
+            "code_flutter_apk" : "flutter build apk --debug",
+            "code_flutter_ios" : "flutter build ipa --debug",
+            "notes" : []
+       }
+    ],
+    "reference" : [
+        {
+            "type" : "links",
+            "resource": [
+                {
+                    "name": "Dart Packaging Guide",
+                    "url": "https://docs.veracode.com/r/c_compilation_dart"
+                }
+            ]
+        },
+        {
+            "type" : "videos",
+            "resource": [
+                {
+                    "name": "Start a Static Scan",
+                    "url": "https://www.youtube.com/embed/M-v0dodSavM"
+                }
+            ]
+        },
+        {
+            "type" : "examples",
+            "resource": [
+                {
+                    "name": "N/A",
+                    "url": "N/A"
+                }
+            ]
+        }
+    ]
+
+}
