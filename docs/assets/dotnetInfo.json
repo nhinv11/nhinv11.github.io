@@ -52,6 +52,45 @@
                             "note": "Veracode extracts executables for analysis from the highest version of the frameworks located in the lib directory."
                         }
                     ]
+                },
+                {
+                    "type" : "macOS",
+                    "version": "macOS 10.15 or later, using Mac Catalyst.",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "After you build the project using the debug configuration, the build creates a subdirectory called bin/Debug. Inside of this directory there is a subfolder for the Android platform."
+                        },
+                        {
+                            "note": "Create a ZIP file for the directory, bin/Debug/net6.0-maccatalyst/maccatalyst-%/ , and upload to the Veracode platform."
+                        }
+                    ]
+                },
+                {
+                    "type" : "Android",
+                    "version": "Android 5.0 (API 21) or later.",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "After you build the project using the debug configuration, the build creates a subdirectory called bin/Debug. Inside of this directory there is a subfolder for the Android platform." 
+                        },
+                        {
+                            "note": "Create a ZIP file for the directory, bin/Debug/net6.0-android/ , and upload to the Veracode platform."
+                        }
+                    ]
+                },
+                {
+                    "type" : "iOS",
+                    "version": "iOS 11 or later, using the latest release of Xcode.",
+                    "structure": [],
+                    "notes": [
+                        {
+                            "note": "After you build the project using the debug configuration, the build creates a subdirectory called bin/Debug. Inside of this directory there is a subfolder for the Android platform." 
+                        },
+                        {
+                            "note": "Create a ZIP file for the directory, bin/Debug/net6.0-ios/iossimulator-%/ , and upload to the Veracode platform."
+                        }
+                    ]
                 }                                 
             ],
             "special" : [
@@ -70,6 +109,8 @@
         {
             "basic" : "Build with DEBUG configuration",
             "code" : "dotnet publish -c Debug -p:PublishProfile=FolderProfile -p:UseAppHost=false -p:SatelliteResourceLanguages='en'",
+            "maui_code": "dotnet build -c Debug",
+            "maui_basic": "You can use the .NET CLI to compile a .NET MAUI application by running the following command.",
             "notes" : ["Veracode does not support static analysis of Self-Contained Deployment (SCD) .NET Core applications."]
        }
     ],
