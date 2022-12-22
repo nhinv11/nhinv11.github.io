@@ -1,7 +1,7 @@
 {
     "packaging" : [
         {
-            "basic" : "Veracode expects you to submit JavaScript as a Zip file.",
+            "basic" : "Upload a ZIP file containing JavaScript source code, or files that contain JavaScript.",
             "format" : [
                 {
                     "type" : "ZIP",
