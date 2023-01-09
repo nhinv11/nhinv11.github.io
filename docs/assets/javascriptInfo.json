@@ -15,9 +15,9 @@
             ],
             "special" : [],
             "sca" : [
-                "For Bower, include package.json and bower.lock in the root of your ZIP archive.", 
                 "For NPM, include package.json and package-lock.json in the root of your ZIP archive.",
-                "For Yarn, include package.json and yarn.lock in the root of your ZIP archive."
+                "For Yarn, include package.json and yarn.lock in the root of your ZIP archive.",
+                "For Bower, include bower_components and bower.json in that directory."
             ]
         }
     ],
@@ -38,7 +38,7 @@
                 },
                 {
                     "name": "JavaScript Packaging Tool",
-                    "url": "https://github.com/fw10/veracode-node-packager"
+                    "url": "https://github.com/fw10/veracode-javascript-packager"
                 }
             ]
         },
