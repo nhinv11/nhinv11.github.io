@@ -1,7 +1,7 @@
 {
     "packaging" : [
         {
-            "basic" : "Upload a compressed ZIP archive containing all PHP code and required dependencies to Veracode.",
+            "basic" : "Upload a compressed ZIP archive containing all PHP code (including all third party PHP code, for example the `vendor` folder) to Veracode. Do not attempt to upload individual PHP files.",
             "sca": [
                 "Include composer.lock in the root of your ZIP archive.",
                 "To achieve the most accurate results, also include composer.json."
