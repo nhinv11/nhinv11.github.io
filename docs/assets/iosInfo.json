@@ -52,12 +52,12 @@
     "compilation" : [
         {
             "basic" : "Veracode requires that all components of iOS applications to support bitcode. Veracode offers an Open-Source CLI tool called gen-ir to assist in generating bitcode, including for Xcode 14 where the ENABLE_BITCODE setting was deprecated. This tool can be used from a CI/CD environment or the command line.",
-            "code" : "xcodebuild archive -project MyProject.xcodeproj -scheme MyScheme-Veracode -destination generic/platform=iOS DEBUG_INFOMATION_FORMAT=dwarf-with-dsym -archivePath MyProject.xcarchive ENABLE_BITCODE=NO > build.log",
+            "code" : "xcodebuild clean && xcodebuild archive -project MyProject.xcodeproj -scheme MyScheme-Veracode -destination generic/platform=iOS DEBUG_INFOMATION_FORMAT=dwarf-with-dsym -archivePath MyProject.xcarchive ENABLE_BITCODE=NO > build.log",
             "code_flutter_ios" : "flutter build ipa --debug",
             "notes_flutter": "Veracode requires a debug build of your Flutter application. You can use the Flutter CLI tool to build your application:",
             "maui_basic": "You can use the .NET CLI to compile a your application by running the following command.",
             "maui_code": "dotnet build -c Debug", 
-            "notes" : ["Archive a Debug Build for Xcode", "1. In the Xcode Toolbar, select your scheme, then select New Scheme…","2. Choose the target you’d like to build, and append -Veracodeto the name (Do no accidently submit to App Store Connect).", "3. Select your new scheme, then select Edit Scheme…","4. Choose Archive", "5. Change Build Configuration to Debug. You can provide a custom archive name if you prefer.","6. Set build settings for the new scheme:","Debug Information Format = DWARF with dSYM File","7. Export a build log with Xcode or use the GEN-IR tool."]
+            "notes" : ["Run 'xcodebuild clean' and then Archive a Debug Build for Xcode", "1. In the Xcode Toolbar, select your scheme, then select New Scheme…","2. Choose the target you’d like to build, and append -Veracode to the name (Do no accidently submit to App Store Connect).", "3. Select your new scheme, then select Edit Scheme…","4. Choose Archive", "5. Change Build Configuration to Debug. You can provide a custom archive name if you prefer.","6. Set build settings for the new scheme:","Debug Information Format = DWARF with dSYM File","7. Export a build log with Xcode or use the GEN-IR tool."]
        }
     ],
     "reference" : [
