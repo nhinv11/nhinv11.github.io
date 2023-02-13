@@ -15,7 +15,7 @@
             ],
             "special" : [],
             "sca" : [
-                "For NPM, include package.json and package-lock.json in the root of your ZIP archive.",
+                "For NPM, include package.json and package-lock.json in the root of your ZIP archive. NPM package-lock.json v3 is not currently supported, however, package-lock.json v2 can be specified through the use of the --lockfile-version=2 parameter.",
                 "For Yarn, include package.json and yarn.lock in the root of your ZIP archive.",
                 "For Bower, include bower_components and bower.json in that directory."
             ]
