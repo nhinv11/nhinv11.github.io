@@ -121,10 +121,6 @@
                 {
                     "name": ".NET Compilation/Packaging Guide",
                     "url": "https://docs.veracode.com/r/compilation_net"
-                },
-                {
-                    "name": ".NET Packaging Tool",
-                    "url": "https://github.com/nhinv11/veracode-dotnet-packager"
                 }
             ]
         },
