@@ -69,10 +69,6 @@
                     "url": "https://docs.veracode.com/r/compilation_ios"
                 },
                 {
-                    "name": "Veracode Mobile Application Packager",
-                    "url": "https://docs.veracode.com/r/t_install_xcode"
-                },
-                {
                     "name": "Veracode iOS GEN-IR Tool",
                     "url": "https://github.com/veracode/gen-ir"
                 }
