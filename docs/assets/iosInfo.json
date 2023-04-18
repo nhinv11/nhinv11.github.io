@@ -11,31 +11,31 @@
                     "structure": [],
                     "notes": [
                         {
-                            "note": "See Packaging Guidance for respective Cross-Platform framework."  
+                            "note": "See Packaging Guidance for respective Cross-Platform framework."
                         }
                     ]
                 },
                 {
-                    "type" : "XARCHIVE",
+                    "type" : "XCARCHIVE",
                     "structure": [],
                     "notes": [
                         {
-                            "note": "GEN-IR requires an input (the build log) and an output (the path to place the bitcode). To make packaging easy, Veracode expects the bitcode to be placed in the XARCHIVE in a folder called IR."  
+                            "note": "GEN-IR requires an input (the build log) and an output (the path to place the bitcode). To make packaging easy, Veracode expects the bitcode to be placed in the XCARCHIVE in a folder called IR."
                         },
                         {
-                            "note": "Run the tool with your build log and archive path: gen-ir build.log MyProject.xcarchive/IR"  
+                            "note": "Run the tool with your build log and archive path: gen-ir build.log MyProject.xcarchive/IR"
                         },
                         {
-                            "note": "Zip the XARCHIVE file: zip -r MyProject.zip MyProject.xcarchive"  
+                            "note": "Zip the XCARCHIVE file: zip -r MyProject.zip MyProject.xcarchive"
                         },
                         {
-                            "note": "Alternatively, you can right click the xcarchive and choose Compress in Finder."  
+                            "note": "Alternatively, you can right click the xcarchive and choose Compress in Finder."
                         },
                         {
-                            "note": "You can then upload the ZIP archive of your iOS application to the Veracode Platform for analysis."  
+                            "note": "You can then upload the ZIP archive of your iOS application to the Veracode Platform for analysis."
                         }
                     ]
-                }                                            
+                }
             ],
             "special" : [
                 {
@@ -45,7 +45,7 @@
                             "note": "Veracode provides a mobile application packager for Xcode that can help package iOS applications built with Xcode 11.x or later. Veracode recommends you use this tool to prepare your application for analysis on the Veracode Platform. View the instructions on installing and using the Veracode Mobile Application Packager."
                         }
                     ]
-                } 
+                }
             ]
         }
     ],
@@ -56,7 +56,7 @@
             "code_flutter_ios" : "flutter build ipa --debug",
             "notes_flutter": "Veracode requires a debug build of your Flutter application. You can use the Flutter CLI tool to build your application:",
             "maui_basic": "You can use the .NET CLI to compile a your application by running the following command.",
-            "maui_code": "dotnet build -c Debug", 
+            "maui_code": "dotnet build -c Debug",
             "notes" : ["Run 'xcodebuild clean' and then Archive a Debug Build for Xcode", "1. In the Xcode Toolbar, select your scheme, then select New Scheme…","2. Choose the target you’d like to build, and append -Veracode to the name (Do no accidently submit to App Store Connect).", "3. Select your new scheme, then select Edit Scheme…","4. Choose Archive", "5. Change Build Configuration to Debug. You can provide a custom archive name if you prefer.","6. Set build settings for the new scheme:","Debug Information Format = DWARF with dSYM File","7. Export a build log with Xcode or use the GEN-IR tool."]
        }
     ],
