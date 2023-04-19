@@ -1,5 +1,5 @@
 {
-    "languages": [ 
+    "languages": [
         {
             "name": ".NET",
             "frameworks": [
@@ -201,7 +201,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "Android",
@@ -219,7 +219,7 @@
                     "packaging": "While APK is accepted, we recommend uploading a compressed ZIP archive containing all JavaScript source code instead. Veracode strongly recommends that you submit applications that have not been processed with a JavaScript minifier or obfuscation tool. Minified JavaScript can increase the difficulty in reviewing flaw results because line-number information can become obscured.",
                     "sca": "Dependencies are included by default, but if you have opted out of sharing dependencies, you must opt back in by removing the dependenciesInfo section from the build.gradle file so that SCA may include dependencies in the scan result.",
                     "notes": "Veracode requires your Adobe PhoneGap/Apache Cordova application to be a compiled Android package (APK) or as a ZIP archive of source code."
-                },                
+                },
                 {
                     "name": "AWS Mobile SDK for Android",
                     "versions": "2.2.4",
@@ -240,7 +240,7 @@
                     "packaging": "",
                     "sca": "Not Supported.",
                     "notes": ""
-                },                  
+                },
                 {
                     "name": "Ionic",
                     "versions": "3.x–4.0",
@@ -254,14 +254,14 @@
                     "packaging": "After you build the project using the debug configuration, the build creates a subdirectory called bin/Debug. Inside of this directory there is a subfolder for the Android platform. Create a ZIP file for the directory, bin/Debug/net6.0-android/ , and upload to the Veracode platform.",
                     "sca": "Include dependency DLLs in upload.",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "Parse Android SDK",
                     "versions": "1.9.4",
                     "packaging": "",
                     "sca": "Dependencies are included by default, but if you have opted out of sharing dependencies, you must opt back in by removing the dependenciesInfo section from the build.gradle file so that SCA may include dependencies in the scan result.",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "React Native",
                     "versions": "0.50–0.67",
@@ -275,15 +275,15 @@
                     "packaging": "After you build the project using the debug configuration, the build creates a subdirectory called bin/Debug. This subdirectory contains the output DLL, PDB, and MDB files. Upload these files individually or package them in a ZIP file.",
                     "sca": "Include dependency DLLs in upload.",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "Xamarin.Forms",
                     "versions": "5.0 and earlier",
                     "packaging": "When you build applications with Xamarin, you must compile the project in debug mode. When you create a cross-platform application, provide the Android target platform output for upload. This subdirectory contains the output DLL, PDB, and MDB files. Upload these files individually or package them in a ZIP file.",
                     "sca": "Include dependency DLLs in upload.",
                     "notes": ""
-                }           
-            ]   
+                }
+            ]
         },
         {
             "name": "Apex",
@@ -306,7 +306,7 @@
                     "packaging": "Include all Visualforce pages.",
                     "notes": "Files must be UTF-8 encoded."
                 }
-            ]   
+            ]
         },
         {
             "name": "Classic ASP",
@@ -317,7 +317,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "COBOL",
@@ -328,7 +328,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "ColdFusion",
@@ -339,7 +339,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },        {
             "name": "Dart",
             "frameworks": [
@@ -349,7 +349,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "Go",
@@ -366,7 +366,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "Groovy",
@@ -377,8 +377,8 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
-        },                
+            ]
+        },
         {
             "name": "Java",
             "frameworks": [
@@ -397,207 +397,207 @@
                 {
                     "name": "AApache Axis",
                     "versions": "1.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
                 },
                 {
                     "name": "Apache Chemistry",
                     "versions": "1.1.0",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
                 },
                 {
                     "name": "Apache Commons",
                     "versions": "2.7.0",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "Apache CXF",
                     "versions": "2.7.0",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": "Veracode only supports the parts of CXF that expand JAX-WS."
-                }, 
+                },
                 {
                     "name": "Apache Jersey",
                     "versions": "2.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "Apache Log4j",
                     "versions": "1.x, 2.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
                 },
                 {
                     "name": "Apache Oro",
                     "versions": "2.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                },   
+                },
                 {
                     "name": "Apache Velocity",
                     "versions": "1.7",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": "Veracode only supports the web rendering usage of the default Velocity servlet for binaries uploaded in a WAR file."
-                },   
+                },
                 {
                     "name": "Apache Xerces",
                     "versions": "2.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                },   
+                },
                 {
                     "name": "Apache XMLBeans",
                     "versions": "2.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                },   
+                },
                 {
                     "name": "AWS SDK for Java",
                     "versions": "1.11, 2.0",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
                 },
                 {
                     "name": "Azure Functions",
                     "versions": "2.x, 3.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "Google App Engine",
                     "versions": "1.9.24",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "Google Web Toolkit (GWT)",
                     "versions": "2.8.0",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "Hibernate",
                     "versions": "1.x, 2.x, 3.x, 4.x, 5.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "Java Portlets",
                     "versions": "1.0, 2.0",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "Java Servlets",
                     "versions": "3.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "JAX-RS",
                     "versions": "1.x, 2.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
                 },
                 {
                     "name": "JAX-WS",
                     "versions": "2.x",
-                    "packaging": "",                    
+                    "packaging": "",
                     "notes": ""
-                },                 
+                },
                 {
                     "name": "JAXB",
                     "versions": "2.x",
-                    "packaging": "",                    
-                    "notes": ""                    
+                    "packaging": "",
+                    "notes": ""
                 },
                 {
                     "name": "JDBC",
                     "versions": "4.2 and earlier",
-                    "packaging": "",                    
-                    "notes": ""                    
+                    "packaging": "",
+                    "notes": ""
                 },
                 {
                     "name": "JDOM",
                     "versions": "1.x",
-                    "packaging": "",                    
-                    "notes": ""                    
-                },                                
+                    "packaging": "",
+                    "notes": ""
+                },
                 {
                     "name": "JSF",
                     "versions": "1.x, 2.x",
-                    "packaging": "",                    
-                    "notes": ""                       
+                    "packaging": "",
+                    "notes": ""
                 },
                 {
                     "name": "JSTL",
                     "versions": "1.x",
-                    "packaging": "",                    
-                    "notes": ""                       
+                    "packaging": "",
+                    "notes": ""
                 },
                 {
                     "name": "Liferay",
                     "versions": "6.x",
-                    "packaging": "",                    
-                    "notes": "Veracode does not support Liferay applications if you customize them using Hook plugins."                       
-                }, 
+                    "packaging": "",
+                    "notes": "Veracode does not support Liferay applications if you customize them using Hook plugins."
+                },
                 {
                     "name": "Play",
                     "versions": "2.0–2.7.x",
-                    "packaging": "",                    
-                    "notes": ""                       
+                    "packaging": "",
+                    "notes": ""
                 },
                 {
                     "name": "Servlets",
                     "versions": "3.x",
-                    "packaging": "",                    
-                    "notes": ""                       
+                    "packaging": "",
+                    "notes": ""
                 },
                 {
                     "name": "Spring Boot",
                     "versions": "1.x, 2.x",
-                    "packaging": "",                    
-                    "notes": "Supports executable JARs, also known as Uber FAT JARs, and JARs with dependencies"                       
-                },                                                                       
+                    "packaging": "",
+                    "notes": "Supports executable JARs, also known as Uber FAT JARs, and JARs with dependencies"
+                },
                 {
                     "name": "Spring Core",
                     "versions": "1.x, 2.x , 3.x, 4.x, 5.x",
-                    "packaging": "",                    
-                    "notes": ""                      
+                    "packaging": "",
+                    "notes": ""
                 },
                 {
                     "name": "Spring Data Access",
                     "versions": "5.x",
-                    "packaging": "",                    
-                    "notes": ""                      
-                },                
+                    "packaging": "",
+                    "notes": ""
+                },
                 {
                     "name": "Spring MVC",
                     "versions": "2.x, 3.x, 4.x, 5.x",
-                    "packaging": "",                    
-                    "notes": ""                     
+                    "packaging": "",
+                    "notes": ""
                 },
                 {
                     "name": "Spring Security",
                     "versions": "3.x, 4.x, 5.x",
-                    "packaging": "",                    
-                    "notes": ""                             
+                    "packaging": "",
+                    "notes": ""
                 },
                 {
                     "name": "Struts",
                     "versions": "1.x, 2.x",
-                    "packaging": "",                    
-                    "notes": ""                             
+                    "packaging": "",
+                    "notes": ""
                 },
                 {
                     "name": "Tiles",
                     "versions": "2.x",
-                    "packaging": "",                    
-                    "notes": ""                             
-                }                                                                
+                    "packaging": "",
+                    "notes": ""
+                }
             ],
             "template_engines": [
                 {
@@ -679,7 +679,7 @@
                 },
                 {
                     "name": "React.js",
-                    "versions": "0.13–17.x.x, react-router versions 2–4",
+                    "versions": "0.13–18.x.x, react-router versions 2–6",
                     "packaging": "",
                     "notes": ""
                 },
@@ -701,7 +701,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "iOS",
@@ -719,7 +719,7 @@
                     "packaging": "Your built iOS Archive can be found in the `build/ios/ipa` folder and can be submitted to Veracode for scanning.",
                     "sca": "Include Podfile.lock in your root of your ZIP archive for submission.",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "Ionic",
                     "versions": "3.x–4.0",
@@ -733,7 +733,7 @@
                     "packaging": "After you build the project using the debug configuration, the build creates a subdirectory called bin/Debug. Inside of this directory there is a subfolder for the iOS platform. Create a ZIP file for the directory, bin/Debug/net6.0-ios/iossimulator-%/ , and upload to the Veracode platform.",
                     "sca": "Include dependency DLLs in upload.",
                     "notes": ""
-                }, 
+                },
                 {
                     "name": "React Native",
                     "versions": "0.50–0.67",
@@ -754,8 +754,8 @@
                     "packaging": "When you build a Xamarin iOS project, it targets a specific simulator. After you build the project using the debug configuration targeting a specific device, for example, iPhone, you can find the output in bin/iPhoneSimulator/Debug. In this example, the output consists of a single EXE and possibly multiple DLL, PDB, and MDB files. Upload these files excluding subdirectories individually, or package them in a ZIP file.",
                     "sca": "Include dependency DLLs in upload.",
                     "notes": ""
-                }               
-            ]   
+                }
+            ]
         },
         {
             "name": "PHP",
@@ -786,7 +786,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "Perl",
@@ -797,7 +797,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "Python",
@@ -850,7 +850,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "RPG",
@@ -861,7 +861,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "Ruby",
@@ -872,7 +872,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
+            ]
         },
         {
             "name": "Scala",
@@ -895,7 +895,7 @@
                     "packaging": "",
                     "notes": ""
                 }
-            ]   
-        }                  
+            ]
+        }
     ]
 }
